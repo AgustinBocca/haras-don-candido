@@ -1,0 +1,38 @@
+---
+import detalleRemates from '../../public/database/detalle-remate.json'
+const remateEspecifico = detalleRemates.remate_especifico
+const rematePreguntas = detalleRemates.remate_preguntas
+---
+
+<!-- Sección con título y tarjeta -->
+<section class="py-12">
+  <div class="container mx-auto">
+    <!-- Título con fondo de color diferente -->
+    <div class="text-center bg-blue-500 text-white py-4">
+      <h2 class="text-3xl font-bold">Proximo Remate</h2>
+    </div>
+
+    <!-- Tarjeta centrada con icono, título, descripción y botón -->
+    <div class="max-w-md mx-auto mt-8 bg-white rounded-lg overflow-hidden shadow-md text-center">
+      <img src="/images/logo-mobile.png" alt="Icono" class="bg-black w-16 h-16 mx-auto mt-4" />
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">{remateEspecifico.nombres}</div>
+        <h2 class="text-black font-bold">Num de Remate:</h2><p class="text-gray-700 text-base">
+          {remateEspecifico.id_Remate}
+        </p>
+        <h2 class="text-black font-bold">Descripcion:</h2><p class="text-gray-700 text-base">
+          {rematePreguntas.descripcion}
+        </p>
+        <h2 class="text-black font-bold">Fecha de remate:</h2><p class="text-gray-700 text-base">
+          {remateEspecifico.fecha_inicio}
+        </p>
+        <h2 class="text-black font-bold">Lugar:</h2><p class="text-gray-700 text-base">
+          {remateEspecifico.nombre_city}
+        </p>
+      </div>
+      <div class="px-6 py-4">
+        <button class="bg-blue-500 text-white px-6 py-3 rounded-full text-lg">Ir al Remate</button>
+      </div>
+    </div>
+  </div>
+</section>
