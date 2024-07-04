@@ -3,49 +3,38 @@ import detalleRemates from '../../public/database/detalle-remate.json'
 const remateEspecifico = detalleRemates.remate_especifico
 const rematePreguntas = detalleRemates.remate_preguntas
 ---
-<section class="py-10 text-black bg-slate-100 relative">
-  <!-- Imagen de fondo ajustada en tamaño para todos los dispositivos -->
-  <div class="bg-cover bg-center h-64 md:h-screen" style="background-image: url('../../public/images/Sliders/Slider02.jpg')"></div>
-
-  <!-- Div para Remate 2024 -->
-  <div class="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:top-1/4 md:left-1/2 md:transform-none md:w-2/5 p-4 z-20">
-    <div class="bg-[#947F45] rounded-md py-2 px-4 flex items-center justify-center h-full">
-      <h1 class="text-2xl py-2 text-center text-white">
-        Nuestro Remate 2024
-      </h1>
+<section class="bg-slate-100 relative w-full lg:min-h-[39rem] md:min-h-[39rem] sm:min-h-[60rem] bg-cover bg-center flex flex-col">
+    <div class="flex-grow">
+        <!-- Título del remate -->
+        <div class="container mx-auto text-center mt-5 sm:mt-[1.5]">
+            <div class="bg-[#9C915D] text-white rounded-lg py-2 sm:py-4 px-4 sm:px-6 inline-block">
+                <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">Nuestro Remate 2024</h1>
+            </div>
+        </div>
+        <!-- Contenido de la tarjeta -->
+        <div class="container mx-auto text-center mt-4 sm:mt-8 mb-4 sm:mb-6 flex-grow">
+            <div class="max-w-2xl mx-auto rounded-lg overflow-hidden shadow-md text-center bg-white relative z-10 p-4 md:p-6">
+                <div>
+                    <div class="font-bold text-lg sm:text-2xl mb-2">{remateEspecifico.nombres}</div>
+                    <div class="text-black font-bold mb-2">Número de Remate:</div>
+                    <p class="text-gray-700 text-sm sm:text-lg">{remateEspecifico.id_Remate}</p>
+                    <div class="text-black font-bold mb-2">Descripción:</div>
+                    <p class="text-gray-700 text-sm sm:text-lg">{rematePreguntas.descripcion}</p>
+                    <div class="text-black font-bold mb-2">Fecha de remate:</div>
+                    <p class="text-gray-700 text-sm sm:text-lg">{remateEspecifico.fecha_inicio}</p>
+                    <div class="text-black font-bold mb-2">Lugar:</div>
+                    <p class="text-gray-700 text-sm sm:text-lg">{remateEspecifico.nombre_city}</p>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-
-  <!-- Contenedor principal -->
-  <div class="container mt-20 md:mt-28 max-w-2xl mx-auto rounded-lg overflow-hidden shadow-md text-center bg-white relative z-10">
-    <!-- Contenido de la tarjeta -->
-    <div class="px-8 py-6">
-      <div class="font-bold text-2xl mb-2">{remateEspecifico.nombres}</div>
-      <div class="text-black font-bold mb-2">Número de Remate:</div>
-      <p class="text-gray-700 text-lg">{remateEspecifico.id_Remate}</p>
-      <div class="text-black font-bold mb-2">Descripción:</div>
-      <p class="text-gray-700 text-lg">{rematePreguntas.descripcion}</p>
-      <div class="text-black font-bold mb-2">Fecha de remate:</div>
-      <p class="text-gray-700 text-lg">{remateEspecifico.fecha_inicio}</p>
-      <div class="text-black font-bold mb-2">Lugar:</div>
-      <p class="text-gray-700 text-lg">{remateEspecifico.nombre_city}</p>
+    <!-- Botón Ver Remate 2023 -->
+    <div class="container mx-auto text-center mb-4 sm:mb-8">
+        <div class="bg-[#9C915D] text-white rounded-lg py-2 sm:py-4 px-4 sm:px-12 inline-block w-full max-w-lg">
+            <div class="flex flex-col sm:flex-row justify-between items-center">
+                <p class="mb-2 sm:mb-0 text-lg sm:text-2xl">Remate 2023</p>
+                <a href="/remate" class="bg-white text-[#9C915D] py-2 px-6 sm:px-10 rounded hover:bg-gray-200">Ver Más</a>
+            </div>
+        </div>
     </div>
-  </div>
-
-  <!-- Div para Ver Remate 2023 -->
-  <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-full md:w-2/3 max-w-screen-md p-4 z-30">
-    <div class="bg-[#947F45] rounded-md py-2 px-4 flex items-center justify-between md:justify-center">
-      <div class="text-white">
-        <h1 class="text-2xl py-2 text-center text-white md:text-left">
-          Ver Remate 2023
-        </h1>
-      </div>
-      <a href="/remate" class="bg-[#fff] text-[#947F45] py-2 px-4 rounded-full hover:bg-[#fcd897]">
-        Ver Más
-      </a>
-    </div>
-  </div>
 </section>
-
-
-

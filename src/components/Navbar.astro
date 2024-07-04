@@ -1,31 +1,114 @@
-<nav class="top-0 w-full z-50 bg-slate-400 backdrop-filter backdrop-blur-sm">
-  <div class="max-w-screen-xl flex items-center justify-between mx-auto p-4">
-    <img src="../../public/images/Logo/Logo Haras Blanco.svg" class="h-24" alt="Logo" />
-    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-      <span class="sr-only">Open main menu</span>
-      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-      </svg>
-    </button>
-    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-        <li>
-          <a href="/" class="block py-2 px-3 text-white bg-[#947F45] rounded md:bg-transparent md:text-[#947F45] md:p-0 dark:text-white md:dark:text-[#947F45]" aria-current="page">Home</a>
-        </li>
-        <li>
-          <a href="/productos-destacados" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#947F45] md:p-0 dark:text-white md:dark:hover:text-[#947F45] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Producto destacado</a>
-        </li>
-        <li>
-          <a href="#Staff" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#947F45] md:p-0 dark:text-white md:dark:hover:text-[#947F45] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Staff</a>
-        </li>
-        <li>
-          <a href="#Pilares" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#947F45] md:p-0 dark:text-white md:dark:hover:text-[#947F45] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pilares</a>
-        </li>
-        <li>
-          <a href="#Contacto" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#947F45] md:p-0 dark:text-white md:dark:hover:text-[#947F45] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contacto</a>
-        </li>
-      </ul>
+---
+import NavbarButtons from './NavbarButtons.astro'
+---
+<section>
+  <nav id="navbar" class="fixed w-full z-30 top-0 left-0 bg-transparent transition-colors duration-300">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="" class="flex items-center">
+        <img src="../../public/images/Logo/Logo Haras Blanco.svg" class="sm:h-28 h-16 mr-1" alt="Logo" />
+      </a>
+      <button id="menu-toggle" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-200 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15"></path>
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="flex flex-col text-lg p-4 md:p-0 mt-4 font-normal border border-gray-200 rounded-lg md:flex-row md:space-x-2 md:mt-0 md:border-0">
+          <li>
+            <NavbarButtons href="/" aria-current="page" className="navbar-button">Home</NavbarButtons>
+          </li>         
+          <li>
+            <NavbarButtons href="/#staff" className="navbar-button">Staff</NavbarButtons>
+          </li>
+          <li>
+            <NavbarButtons href="/#pilares" className="navbar-button">Pilares</NavbarButtons>
+          </li>
+          <li>
+            <NavbarButtons href="/#contacto" className="navbar-button">Contacto</NavbarButtons>
+          </li>
+          <li>
+            <NavbarButtons href="/productos-destacados" className="navbar-button">Productos Destacados</NavbarButtons>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+  <img class="h-[30rem] w-full" src="../../public/images/Sliders/Slider03.jpg">
+</section>
+
+<style>
+  .btn-brand-color {
+    background-color: #cc9f52;
+  }
+
+  .btn-brand-color:hover {
+    background-color: #fac261;
+  }
+
+  .background-navbar {
+    background: linear-gradient(180deg,
+        rgba(182, 142, 72, 0.589) 0%,
+        rgba(204, 159, 82, 0.404) 41%,
+        rgba(221, 172, 88, 0.02) 100%);
+  }
+
+  .scrolled-background {
+    background-color: #beb69d; /* Color de fondo cuando se hace scroll */
+  }
+
+  /* Estilos para el menú desplegado en dispositivos móviles */
+  @media (max-width: 767px) {
+    #navbar-default {
+      background-color: #beb69d; /* Fondo cuando se muestra el menú en móviles */
+      padding: 8px; /* Ajusta el espaciado interior para que el fondo sea visible */
+      border-radius: 10px; /* Borde redondeado */
+    }
+
+    .navbar-button {
+      transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+      padding: 8px 12px; /* Ajusta el espaciado interior */
+      border-radius: 8px; /* Borde redondeado para los botones */
+      margin-bottom: 4px; /* Espacio entre los elementos de la lista */
+    }
+
+    .navbar-button:hover {
+      background-color: rgba(0, 0, 0, 0.1); /* Fondo más oscuro al hacer hover */
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const navbar = document.getElementById('navbar');
+    const menuToggle = document.getElementById('menu-toggle');
+    const navbarDefault = document.getElementById('navbar-default');
+
+    if (navbar && menuToggle && navbarDefault) {
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 0) {
+          navbar.classList.add('scrolled-background');
+          navbar.classList.remove('bg-transparent');
+        } else {
+          navbar.classList.remove('scrolled-background');
+          navbar.classList.add('bg-transparent');
+        }
+      });
+
+      menuToggle.addEventListener('click', function () {
+        navbarDefault.classList.toggle('hidden');
+      });
+
+      // Cerrar el menú al hacer clic en un enlace del menú en dispositivos móviles
+      navbarDefault.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          navbarDefault.classList.add('hidden');
+        });
+      });
+    }
+  });
+</script>
 
