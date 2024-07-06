@@ -1,11 +1,8 @@
----
-import NavbarButtons from './NavbarButtons.astro'
----
 <section>
   <nav id="navbar" class="fixed w-full z-30 top-0 left-0 bg-transparent transition-colors duration-300">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <a href="" class="flex items-center">
-        <img src="../../public/images/Logo/Logo Haras Blanco.svg" class="sm:h-28 h-16 mr-1" alt="Logo" />
+      <a href="/" class="flex items-center">
+        <img id="logo" src="../../public/images/Logo/Logo Haras Blanco.svg" class="sm:h-28 h-16 mr-1 transition-all duration-300" alt="Logo" />
       </a>
       <button id="menu-toggle" type="button"
         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-200 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -19,34 +16,63 @@ import NavbarButtons from './NavbarButtons.astro'
       <div class="hidden w-full md:block md:w-auto" id="navbar-default">
         <ul class="flex flex-col text-lg p-4 md:p-0 mt-4 font-normal border border-gray-200 rounded-lg md:flex-row md:space-x-2 md:mt-0 md:border-0">
           <li>
-            <NavbarButtons href="/" aria-current="page" className="navbar-button">Home</NavbarButtons>
-          </li>         
-          <li>
-            <NavbarButtons href="/#staff" className="navbar-button">Staff</NavbarButtons>
+            <a href="/" aria-current="page"
+              class="flex-row justify-center text-white cursor-pointer font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-110 scale-90 gap-x-2 opacity-90 hover:opacity-100 navbar-button">
+              <span class="relative">
+                Home
+                <span class="absolute bottom-0 left-0 w-full h-1 bg-[#9C915D] transform scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
+              </span>
+            </a>
           </li>
           <li>
-            <NavbarButtons href="/#pilares" className="navbar-button">Pilares</NavbarButtons>
+            <a href="/#staff"
+              class="flex-row justify-center text-white cursor-pointer font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-110 scale-90 gap-x-2 opacity-90 hover:opacity-100 navbar-button">
+              <span class="relative">
+                Staff
+                <span class="absolute bottom-0 left-0 w-full h-1 bg-[#9C915D] transform scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
+              </span>
+            </a>
           </li>
           <li>
-            <NavbarButtons href="/#contacto" className="navbar-button">Contacto</NavbarButtons>
+            <a href="/#pilares"
+              class="flex-row justify-center text-white cursor-pointer  font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-110 scale-90 gap-x-2 opacity-90 hover:opacity-100 navbar-button">
+              <span class="relative">
+                Pilares
+                <span class="absolute bottom-0 left-0 w-full h-1 bg-[#9C915D] transform scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
+              </span>
+            </a>
           </li>
           <li>
-            <NavbarButtons href="/productos-destacados" className="navbar-button">Productos Destacados</NavbarButtons>
+            <a href="/#contacto"
+              class="flex-row justify-center text-white cursor-pointer font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-110 scale-90 gap-x-2 opacity-90 hover:opacity-100 navbar-button">
+              <span class="relative">
+                Contacto
+                <span class="absolute bottom-0 left-0 w-full h-1 bg-[#9C915D] transform scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="/productos-destacados"
+              class="flex-row justify-center text-white cursor-pointer font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-110 scale-90 gap-x-2 opacity-90 hover:opacity-100 navbar-button">
+              <span class="relative">
+                Productos Destacados
+                <span class="absolute bottom-0 left-0 w-full h-1 bg-[#9C915D] transform scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
+              </span>
+            </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <img class="h-[30rem] w-full" src="../../public/images/Sliders/Slider03.jpg">
 </section>
 
 <style>
   .btn-brand-color {
-    background-color: #cc9f52;
+    background-color: #ab994b;
   }
 
   .btn-brand-color:hover {
-    background-color: #fac261;
+    background-color: #ab994b;
   }
 
   .background-navbar {
@@ -57,26 +83,67 @@ import NavbarButtons from './NavbarButtons.astro'
   }
 
   .scrolled-background {
-    background-color: #beb69d; /* Color de fondo cuando se hace scroll */
+    backdrop-filter: blur(10px);
+    background-color: #9c925d57;
+  }
+
+  .scrolled-logo {
+    background-color: #ab994b;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .scrolled-text {
+    color: #3f380d;
+  }
+
+  /* Efecto hover subrayado */
+  .navbar-button {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .navbar-button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: transparent; /* Color de fondo del subrayado */
+    transition: background-color 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+
+  .navbar-button:hover::after {
+    background-color: #ab994b; /* Color del subrayado al hacer hover */
+    transform: scaleX(1);
   }
 
   /* Estilos para el menú desplegado en dispositivos móviles */
   @media (max-width: 767px) {
     #navbar-default {
-      background-color: #beb69d; /* Fondo cuando se muestra el menú en móviles */
-      padding: 8px; /* Ajusta el espaciado interior para que el fondo sea visible */
-      border-radius: 10px; /* Borde redondeado */
+      background-color: #ab994b;
+      padding: 8px;
+      border-radius: 10px;
     }
 
     .navbar-button {
-      transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
-      padding: 8px 12px; /* Ajusta el espaciado interior */
-      border-radius: 8px; /* Borde redondeado para los botones */
-      margin-bottom: 4px; /* Espacio entre los elementos de la lista */
+      transition: background-color 0.3s ease;
+      padding: 8px 12px;
+      border-radius: 8px;
+      margin-bottom: 4px;
+      /* Añadir cambio de color de texto en dispositivos móviles */
+      color: #fff; /* Color de texto por defecto */
+    }
+
+    .navbar-button.scrolled-text-mobile {
+      color: #ab994b; /* Color de texto cambiado cuando se hace scroll */
     }
 
     .navbar-button:hover {
-      background-color: rgba(0, 0, 0, 0.1); /* Fondo más oscuro al hacer hover */
+      background-color: rgba(0, 0, 0, 0.1);
     }
   }
 </style>
@@ -84,17 +151,27 @@ import NavbarButtons from './NavbarButtons.astro'
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const navbar = document.getElementById('navbar');
+    const logo = document.getElementById('logo');
+    const navbarButtons = document.querySelectorAll('.navbar-button');
     const menuToggle = document.getElementById('menu-toggle');
     const navbarDefault = document.getElementById('navbar-default');
 
-    if (navbar && menuToggle && navbarDefault) {
+    if (navbar && logo && menuToggle && navbarDefault) {
       window.addEventListener('scroll', function () {
         if (window.scrollY > 0) {
           navbar.classList.add('scrolled-background');
           navbar.classList.remove('bg-transparent');
+          logo.classList.add('scrolled-logo');
+          navbarButtons.forEach(button => {
+            button.classList.add('scrolled-text');
+          });
         } else {
           navbar.classList.remove('scrolled-background');
           navbar.classList.add('bg-transparent');
+          logo.classList.remove('scrolled-logo');
+          navbarButtons.forEach(button => {
+            button.classList.remove('scrolled-text');
+          });
         }
       });
 
@@ -111,4 +188,3 @@ import NavbarButtons from './NavbarButtons.astro'
     }
   });
 </script>
-

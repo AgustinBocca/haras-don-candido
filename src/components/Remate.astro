@@ -2,13 +2,17 @@
 import detalleRemates from '../../public/database/detalle-remate.json'
 const remateEspecifico = detalleRemates.remate_especifico
 const rematePreguntas = detalleRemates.remate_preguntas
+
+import ImgHeaderHome from './ImgHeaderHome.astro';
 ---
 <section class="bg-slate-100 relative w-full lg:min-h-[39rem] md:min-h-[39rem] sm:min-h-[60rem] bg-cover bg-center flex flex-col">
+    <ImgHeaderHome />
+    
     <div class="flex-grow">
         <!-- Título del remate -->
         <div class="container mx-auto text-center mt-5 sm:mt-[1.5]">
-            <div class="bg-[#9C915D] text-white rounded-lg py-2 sm:py-4 px-4 sm:px-6 inline-block">
-                <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">Nuestro Remate 2024</h1>
+            <div class="bg-[#ab994b] text-white rounded-lg py-2 sm:py-4 px-4 sm:px-6 inline-block">
+                <h1 class="text-xl sm:text-1xl md:text-2xl lg:text-2xl">Nuestro Remate 2024</h1>
             </div>
         </div>
         <!-- Contenido de la tarjeta -->
@@ -30,10 +34,10 @@ const rematePreguntas = detalleRemates.remate_preguntas
     </div>
     <!-- Botón Ver Remate 2023 -->
     <div class="container mx-auto text-center mb-4 sm:mb-8">
-        <div class="bg-[#9C915D] text-white rounded-lg py-2 sm:py-4 px-4 sm:px-12 inline-block w-full max-w-lg">
+        <div class="bg-[#ab994b] text-white rounded-lg py-2 sm:py-4 px-4 sm:px-12 inline-block w-full max-w-lg">
             <div class="flex flex-col sm:flex-row justify-between items-center">
                 <p class="mb-2 sm:mb-0 text-lg sm:text-2xl">Remate 2023</p>
-                <a href="/remate" class="bg-white text-[#9C915D] py-2 px-6 sm:px-10 rounded hover:bg-gray-200">Ver Más</a>
+                <a href="/remate" class="bg-white text-[#ab994b] py-2 px-6 sm:px-10 rounded hover:bg-gray-200">Ver Más</a>
             </div>
         </div>
     </div>

@@ -1,0 +1,146 @@
+---
+import ImgHeaderProductosDestacados from './ImgHeaderProductosDestacados.astro';
+
+const productos_destacados = [
+{
+name: "Pegasus Athenea (ARG)",
+pedigree: "Indorado x Stakkato x Escudo I",
+imageUrl: "../../public/images/Productos-Destacados/Pegasus_Athenea.jpeg",
+premios: [
+"Ganadora Gran Premio 2* Gral. San Martín 2019",
+"3° puesto Gran Premio CSI 2* Haras El Capricho 2019",
+"Medalla de Plata individual Young Riders FEI South American Championships Chile 2018"
+]
+},
+{
+name: "Pegasus Aymar (ARG)",
+pedigree: "Con Air x Stakkato x Escudo I",
+imageUrl: "../../public/images/Productos-Destacados/Pegasus_Aymar.jpeg",
+premios: [
+"2° puesto Copa Puma Establecimiento La Cautiva 2024",
+"2° puesto Mini G.P. C.A.E. 2022",
+"5° puesto Mini G.P. CSI 2* C.A.E. 2022",
+"2° puesto Cat. Preliminar Polo Jumping Tour 2022",
+"2° puesto Campeonato Criadores I 2019"
+]
+},
+{
+name: "Pegasus Balotelli (ARG)",
+pedigree: "Balou Du Rouet x Kannan x Quick Star",
+imageUrl: "../../public/images/Productos-Destacados/Pegasus_Balotelli_2.jpeg",
+premios: [
+"2° puesto Expo Nuestros Caballos AAFE 2023",
+"Campeón Salto Suelto en Manga II AAFE 2022"
+]
+},
+{
+name: "Pegasus Chau Amore (ARG)",
+pedigree: "Chacco Blue x Cardento x Goodtimes",
+imageUrl: "../../public/images/Productos-Destacados/Pegasus_ChauAmore.jpeg",
+premios: [
+"5° G.P. Sol de Mayo CSI 2* 2023",
+"Medalla de Plata por equipos Juegos ODESUR 2022",
+"4° puesto individual Juegos ODESUR 2022",
+"4° puesto Nacional de Primera Categoría 2022",
+"Ganadora G.P. 1,50 m. C.A.E 2021",
+"Ganadora G.P. Technopolo 2021"
+]
+},
+{
+name: "Pegasus Chelsea (PARAGUAY)",
+pedigree: "Chester Z x Indorado x Stakkato",
+imageUrl: "../../public/images/Productos-Destacados/Pegasus_Chelsea.jpeg",
+premios: [
+"Chester Z x Indorado x Stakkato"
+]
+},
+{
+name: "Pegasus Cristiano (ARG - Fallecido)",
+pedigree: "Contendro I x Stakkato x Escudo I",
+imageUrl: "../../public/images/Productos-Destacados/Pegasus_Cristiano.jpg",
+premios: [
+"Contendro I x Stakkato x Escudo I"
+]
+},
+{
+name: "Pegasus Lennon (USA)",
+pedigree: "Larino x Cardento x Goodtimes",
+imageUrl: "../../public/images/Productos-Destacados/Pegasus_Lennon.jpeg",
+premios: [
+"Reserve Circuit Champion 12-14 equitation WEF Wellington, Florida",
+"Ganador THIS Medal WEF Wellington, Florida",
+"Ganador THIS Medal HITS Chicago, Illinois"
+]
+},
+{
+name: "Pegasus Leprevost (ARG)",
+pedigree: "Lord Z x Stakkato x Escudo I",
+imageUrl: "../../public/images/Productos-Destacados/Pegasus_Leprevost.jpg",
+premios: [
+"Ganadora CSI* 1,40 m. Haras Abril 2023",
+"Ganadora Mini G.P. 1,35/40 m. C.A.E. 2023"
+]
+},
+{
+name: "Pegasus Lewis (ARG)",
+pedigree: "Lord Z x Stakkato x Escudo I",
+imageUrl: "../../public/images/Productos-Destacados/Pegasus_Lewis.jpeg",
+premios: [
+"4° puesto Individual FEI North American Youth Championships 2023 ",
+"Campeón Nacional Segunda Categoría 2022",
+"3° puesto Criadores III AAFE 2019"
+]
+},
+{
+name: "Pegasus Porvenir (ARG)",
+pedigree: "Con Air x Indorado x Stakkato",
+imageUrl: "../../public/images/Productos-Destacados/Pegasus_Porvenir.jpeg",
+premios: [
+"Con Air x Indorado x Stakkato"
+]
+}
+];
+---
+<section>
+  
+  <header class="relative">
+    <ImgHeaderProductosDestacados />
+    <div class="absolute bottom-6 left-0 w-full pt-24 pb-14 transform translate-y-1/2 z-10">
+      <h1 class="bg-[#ab994b] text-2xl py-4 rounded-md text-center text-white max-w-md mx-auto">
+        Productos Destacados
+      </h1>
+    </div>
+  </header>
+  
+  <div class="md:p-8 bg-white">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 pt-6">
+      {productos_destacados.map((horse) => (
+      <div
+        class="max-w-sm bg-white border  rounded-lg shadow border-yellow-400 dark:bg-gray-800 dark:border-gray-700 flex flex-col text-center mx-auto">
+        <a href="#">
+          <img class="rounded-t-lg mx-auto" src={horse.imageUrl} alt={horse.name} />
+        </a>
+        <div class="p-5 flex flex-col justify-between h-full">
+          <div>
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{horse.name}</h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{horse.pedigree}</p>
+            {/* Mostrar premios */}
+            <div class="text-left">
+              {horse.premios.map((premio) => (
+              <p class="text-gray-600 text-justify"><i class="fa fa-trophy fa-1x"></i> {premio}</p>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+      ))}
+
+    </div>
+
+    <div class="col-span-full flex justify-center pt-6">
+      <div class="w-5/6 h-0.5 bg-gray-300"></div>
+    </div>
+  </div>
+</section>
