@@ -59,7 +59,7 @@ name: "Pegasus Cristiano (ARG - Fallecido)",
 pedigree: "Contendro I x Stakkato x Escudo I",
 imageUrl: "../../public/images/Productos-Destacados/Pegasus_Cristiano.jpg",
 premios: [
-"Contendro I x Stakkato x Escudo I"
+"3° puesto Campeonato Criadores III AAFE 2019"
 ]
 },
 {
@@ -102,41 +102,41 @@ premios: [
 ];
 ---
 <section>
-  
   <header class="relative">
     <ImgHeaderProductosDestacados />
     <div class="absolute bottom-6 left-0 w-full pt-24 pb-14 transform translate-y-1/2 z-10">
-      <h1 class="bg-[#ab994b] text-2xl py-4 rounded-md text-center text-white max-w-md mx-auto">
+      <h1 class="bg-[#ab994b] text-2xl md:text-3xl lg:text-4xl py-4 rounded-md text-center text-white w-11/12 md:w-3/4 lg:w-1/2 mx-auto mb-6 md:mb-0">
         Productos Destacados
       </h1>
-    </div>
+    </div>       
   </header>
   
-  <div class="md:p-8 bg-white">
+  <div class="md:p-8 bg-white mt-12">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 pt-6">
       {productos_destacados.map((horse) => (
-      <div
-        class="max-w-sm bg-white border  rounded-lg shadow border-yellow-400 dark:bg-gray-800 dark:border-gray-700 flex flex-col text-center mx-auto">
-        <a href="#">
-          <img class="rounded-t-lg mx-auto" src={horse.imageUrl} alt={horse.name} />
-        </a>
-        <div class="p-5 flex flex-col justify-between h-full">
-          <div>
-            <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{horse.name}</h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{horse.pedigree}</p>
-            {/* Mostrar premios */}
-            <div class="text-left">
-              {horse.premios.map((premio) => (
-              <p class="text-gray-600 text-justify"><i class="fa fa-trophy fa-1x"></i> {premio}</p>
-              ))}
+        <div class="max-w-sm bg-white border rounded-lg shadow border-yellow-400 dark:bg-gray-800 dark:border-gray-700 flex flex-col text-center mx-auto">
+          <a href="#">
+            <div class="h-60 overflow-hidden flex items-center justify-center">
+              <img class="object-cover object-center w-full h-full" src={horse.imageUrl} alt={horse.name} />
+            </div>
+          </a>
+          <div class="p-5 flex flex-col justify-between h-full">
+            <div>
+              <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{horse.name}</h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{horse.pedigree}</p>
+              <div class="text-left">
+                {horse.premios.map((premio) => (
+                  <p class="text-gray-600 text-justify flex items-start gap-2 mb-1">
+                    <i class="fa fa-trophy fa-1x mt-1"></i> {premio}
+                  </p>
+                ))}
+              </div>
             </div>
           </div>
         </div>
-      </div>
       ))}
-
     </div>
 
     <div class="col-span-full flex justify-center pt-6">
