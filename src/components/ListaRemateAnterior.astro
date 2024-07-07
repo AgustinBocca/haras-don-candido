@@ -2,103 +2,113 @@
 import ImgHeaderRemateAnterior from '../components/ImgHeaderRemateAnterior.astro'
 const horses = [
   {
-    name: "Pegasus Amore Mio",
-    pedigree: "BALOU DU ROUET x CARDENTO x GOODTIMES",
-    imageUrl: "../../public/images/Remate 2023/01-PegasusAmoreMio-Portada.jpg",
-    pdfUrl: "../../public/images/Remate 2023/01-PegasusAmoreMio-Ficha.pdf",
+    name: 'Pegasus Amore Mio',
+    pedigree: 'BALOU DU ROUET x CARDENTO x GOODTIMES',
+    imageUrl: '/images/Remate 2023/01-PegasusAmoreMio-Portada.jpg',
+    pdfUrl: '/images/Remate 2023/01-PegasusAmoreMio-Ficha.pdf'
   },
   {
-    name: "Pegasus Cornet Du Emi",
-    pedigree: "CORNET DU LYS x EMILION x HEARTBREAKER",
-    imageUrl: "../../public/images/Remate 2023/02-PegasusCornetDuEmi-Portada.jpg",
-    pdfUrl: "../../public/images/Remate 2023/02-PegasusCornetDuEmi-Ficha.pdf",
+    name: 'Pegasus Cornet Du Emi',
+    pedigree: 'CORNET DU LYS x EMILION x HEARTBREAKER',
+    imageUrl: '/images/Remate 2023/02-PegasusCornetDuEmi-Portada.jpg',
+    pdfUrl: '/images/Remate 2023/02-PegasusCornetDuEmi-Ficha.pdf'
   },
   {
-    name: "Pegasus Kenia",
-    pedigree: "LARINO x KANNAN x QUICKSTAR",
-    imageUrl: "../../public/images/Remate 2023/03-PegasusKenia-Portada.jpg",
-    pdfUrl: "../../public/images/Remate 2023/03-PegasusKenia-Ficha.pdf",
+    name: 'Pegasus Kenia',
+    pedigree: 'LARINO x KANNAN x QUICKSTAR',
+    imageUrl: '/images/Remate 2023/03-PegasusKenia-Portada.jpg',
+    pdfUrl: '/images/Remate 2023/03-PegasusKenia-Ficha.pdf'
   },
   {
-    name: "Pegasus Balou De Emilion",
-    pedigree: "BALOU DU ROUET x EMILION x VOLTAIRE",
-    imageUrl: "../../public/images/Remate 2023/04-PegasusBalouDeEmilion-Portada.jpg",
-    pdfUrl: "../../public/images/Remate 2023/04-PegasusBalouDeEmilion-Ficha.pdf",
+    name: 'Pegasus Balou De Emilion',
+    pedigree: 'BALOU DU ROUET x EMILION x VOLTAIRE',
+    imageUrl: '/images/Remate 2023/04-PegasusBalouDeEmilion-Portada.jpg',
+    pdfUrl: '/images/Remate 2023/04-PegasusBalouDeEmilion-Ficha.pdf'
   },
   {
-    name: "Pegasus Alta Gama",
-    pedigree: "PEGASUS CRISTIANO x HELLO DU REVERDY x HANS ANDERS Z",
-    imageUrl: "../../public/images/Remate 2023/05-PegasusAltaGama-Portada.jpg",
-    pdfUrl: "../../public/images/Remate 2023/05-PegasusAltaGama-Ficha.pdf",
+    name: 'Pegasus Alta Gama',
+    pedigree: 'PEGASUS CRISTIANO x HELLO DU REVERDY x HANS ANDERS Z',
+    imageUrl: '/images/Remate 2023/05-PegasusAltaGama-Portada.jpg',
+    pdfUrl: '/images/Remate 2023/05-PegasusAltaGama-Ficha.pdf'
   },
   {
-    name: "Pegasus Gran Houdini",
-    pedigree: "A.S. FE GRANDE x NÚMERO UNO x CONTENDRO II",
-    imageUrl: "../../public/images/Remate 2023/06-PegasusGranHoudini-Portada.jpg",
-    pdfUrl: "../../public/images/Remate 2023/06-PegasusGranHoudini-Ficha.pdf",
+    name: 'Pegasus Gran Houdini',
+    pedigree: 'A.S. FE GRANDE x NÚMERO UNO x CONTENDRO II',
+    imageUrl: '/images/Remate 2023/06-PegasusGranHoudini-Portada.jpg',
+    pdfUrl: '/images/Remate 2023/06-PegasusGranHoudini-Ficha.pdf'
   },
   {
-    name: "Pegasus Victorina",
-    pedigree: "PEGASUS CRISTIANO x VOLTAIRE x LANDLORD Z",
-    imageUrl: "../../public/images/Remate 2023/07-PegasusVictorina-Portada.jpg",
-    pdfUrl: "../../public/images/Remate 2023/07-PegasusVictorina-Ficha.pdf",
+    name: 'Pegasus Victorina',
+    pedigree: 'PEGASUS CRISTIANO x VOLTAIRE x LANDLORD Z',
+    imageUrl: '/images/Remate 2023/07-PegasusVictorina-Portada.jpg',
+    pdfUrl: '/images/Remate 2023/07-PegasusVictorina-Ficha.pdf'
   },
   {
-    name: "Pegasus One",
-    pedigree: "CONTENDRO I x OBERON DU MOULIN x MON FETICHE II",
-    imageUrl: "../../public/images/Remate 2023/08-PegasusOne-Portada.jpg",
-    pdfUrl: "../../public/images/Remate 2023/08-PegasusOne-Ficha.pdf",
+    name: 'Pegasus One',
+    pedigree: 'CONTENDRO I x OBERON DU MOULIN x MON FETICHE II',
+    imageUrl: '/images/Remate 2023/08-PegasusOne-Portada.jpg',
+    pdfUrl: '/images/Remate 2023/08-PegasusOne-Ficha.pdf'
   },
   {
-    name: "Pegasus Cristobal",
-    pedigree: "PEGASUS CRISTIANO x ALNOK Z x CARIDOR Z",
-    imageUrl: "../../public/images/Remate 2023/09-PegasusCristobal-Portada.jpg",
-    pdfUrl: "../../public/images/Remate 2023/09-PegasusCristobal-Ficha.pdf",
+    name: 'Pegasus Cristobal',
+    pedigree: 'PEGASUS CRISTIANO x ALNOK Z x CARIDOR Z',
+    imageUrl: '/images/Remate 2023/09-PegasusCristobal-Portada.jpg',
+    pdfUrl: '/images/Remate 2023/09-PegasusCristobal-Ficha.pdf'
   },
   {
-    name: "Pegasus Christine",
-    pedigree: "PEGASUS CRISTIANO x VOLTAIRE x ALME",
-    imageUrl: "../../public/images/Remate 2023/10-PegasusChristine-Portada.jpg",
-    pdfUrl: "../../public/images/Remate 2023/10-PegasusChristine-Ficha.pdf",
+    name: 'Pegasus Christine',
+    pedigree: 'PEGASUS CRISTIANO x VOLTAIRE x ALME',
+    imageUrl: '/images/Remate 2023/10-PegasusChristine-Portada.jpg',
+    pdfUrl: '/images/Remate 2023/10-PegasusChristine-Ficha.pdf'
   },
   {
-    name: "Magnus Victoria",
-    pedigree: "VOLTAIRE x LANLORD Z x LANDADEL",
-    imageUrl: "../../public/images/Remate 2023/11-MagnusVictoria-Portada.jpg",
-    pdfUrl: "../../public/images/Remate 2023/11-MagnusVictoria-Ficha.pdf",
-  },
-];
+    name: 'Magnus Victoria',
+    pedigree: 'VOLTAIRE x LANLORD Z x LANDADEL',
+    imageUrl: '/images/Remate 2023/11-MagnusVictoria-Portada.jpg',
+    pdfUrl: '/images/Remate 2023/11-MagnusVictoria-Ficha.pdf'
+  }
+]
 ---
 
 <section>
   <ImgHeaderRemateAnterior />
   <header class="relative">
     <div class="absolute bottom-6 left-0 w-full pt-24 pb-14 transform translate-y-1/2 z-10">
-      <h1 class="bg-[#ab994b] text-2xl md:text-3xl lg:text-4xl py-4 rounded-md text-center text-white w-11/12 md:w-3/4 lg:w-1/2 mx-auto mb-6 md:mb-0">
+      <h1
+        class="bg-[#ab994b] text-2xl md:text-3xl lg:text-4xl py-4 rounded-md text-center text-white w-11/12 md:w-3/4 lg:w-1/2 mx-auto mb-6 md:mb-0"
+      >
         Nuestro Remate 2023
       </h1>
-    </div> 
-  </header>    
+    </div>
+  </header>
   <div class="p-4 md:p-8 bg-white mt-12">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-      {horses.map((horse) => (
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col text-center mx-auto">
-          <a href="#">
-            <img class="rounded-t-lg mx-auto" src={horse.imageUrl} alt={horse.name} />
-          </a>
-          <div class="p-5 flex flex-col justify-between h-full">
-            <div>
-              <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{horse.name}</h5>
-              </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{horse.pedigree}</p>
-            </div>
-            <a href={horse.pdfUrl} target="_blank" class="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-center text-white bg-[#ab994b] rounded-full hover:bg-[#e7cc82] focus:ring-4 focus:outline-none focus:ring-[#21501b] dark:bg-[#1b3318] dark:hover:bg-[#2a5724] dark:focus:ring-[#2b5825] mt-auto">
-              Ver Ficha
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+      {
+        horses.map((horse) => (
+          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col text-center mx-auto">
+            <a href="#">
+              <img class="rounded-t-lg mx-auto" src={horse.imageUrl} alt={horse.name} />
             </a>
+            <div class="p-5 flex flex-col justify-between h-full">
+              <div>
+                <a href="#">
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    {horse.name}
+                  </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{horse.pedigree}</p>
+              </div>
+              <a
+                href={horse.pdfUrl}
+                target="_blank"
+                class="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-center text-white bg-[#ab994b] rounded-full hover:bg-[#e7cc82] dark:bg-[#1b3318] dark:hover:bg-[#2a5724] mt-auto"
+              >
+                Ver Ficha
+              </a>
+            </div>
           </div>
-        </div>
-      ))}
+        ))
+      }
     </div>
     <!-- Línea divisoria -->
     <div class="col-span-full flex justify-center pt-6">
@@ -106,6 +116,3 @@ const horses = [
     </div>
   </div>
 </section>
-
-
-  

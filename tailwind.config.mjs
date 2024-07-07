@@ -1,15 +1,14 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}",
-    "./node_modules/flowbite/**/*.js",
-  ],
-  theme: {
-    extend: {
-      fontFamily:{
-        sans: ['Monserrat', 'sans-serif'],
-      },
-    },
-  },
-  plugins: [require("flowbite/plugin")],
-};
+
+export const content = [
+  './src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
+  './node_modules/flowbite/**/*.js'
+]
+export const theme = {
+  extend: {
+    fontFamily: {
+      sans: ['Monserrat', 'sans-serif']
+    }
+  }
+}
+export const plugins = [require('flowbite/plugin')]
