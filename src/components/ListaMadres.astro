@@ -33,7 +33,7 @@ const madres = [
         name: 'DINA VDL',
         pedigree: '',
         imagenUrl: '/images/Madres/DINA-VDL-KWPN/FOTO/Dina-VDL.jpeg',
-        pedigreeUrl: '/images/Madres/DINA-VDL-KWPN/DINA-VDL-Pedigree.jpg',
+        pedigreeUrl: '/images/Madres/DINA-VDL-KWPN/DINA-VDL-Pedrigree.jpg',
         videoUrl: 'https://www.youtube.com/watch?v=zBYZaTqUkA4',
         primeraDescripcion: 'DINA VDL, importada desde Holanda por nuestro haras, posee un pedigree excepcional que combina las destacadas líneas de INDOCTRO y CONTENDER.Desarrolló su carrera bajo la monta de Bárbara Dutruel y, desde sus inicios, demostró en las pistas mucha actitud y potencial. Así fue que en el 2013 se consagró en Rosario como Campeona de Caballos Nuevos 1,20 m. y posteriormente Campeona Nacional de Amazonas. En el 2014, fue Sub-campeona del Torneo Aniversario del Jockey Club Córdoba y al año siguiente se coronó Campeona Provincial de Córdoba en Primera Categoría. En el 2016, los triunfos siguieron y DINA VDL fue Ganadora del G.P. Regional de Rosario y Campeona en Primera Categoría, Campeona del Campeonato Valla Uno y Sub-campeona Provincial de Córdoba. Finalmente, en el 2017 se consagró Campeona de Primera Categoría del Torneo Aniversario del Jockey Club Córdoba.',
         segundaDescripcion: 'Indudablemente, DINA VDL es una de las madres de élite de nuestro haras, transmitiendo a sus hijos su delicadeza, competitividad y gran corazón para competir en las pistas.Entre su notable descendencia se encuentran PEGASUS DILLINGER, destacado como Campeón en Nuestros Caballos 2014 y Ganador del FEI Challenge Rosario 1,20 m. 2018, así como Campeón de Segunda Categoría 1,20 m. en el Torneo del Centro de la República 2019 y Ganador Selectiva FEI AMERICAS CHAMPIONSHIP 2021 Junior 1,40 m. con su propietaria Delfina Spinella. Otros hijos destacados son P. SINSAJO, P. VODOO y P. UNITED, quienes continúan el legado de excelencia de su madre en las pistas.DINA VDL no solo ha dejado su marca en las pistas, sino que también ha establecido un estándar de calidad en la cría de caballos de salto.'
@@ -59,8 +59,8 @@ const madres = [
     {
         name: 'HINULA 2-N',
         pedigree: '',
-        imagenUrl: '',
-        pedigreeUrl: '/images/Madres/HINULA-2-N-KWPN/DINA-VDL-Pedigree.jpg',
+        imagenUrl: 'https://placehold.co/400x300?text=Sin%20Imagen',
+        pedigreeUrl: '/images/Madres/HINULA-2-N-KWPN/HINULA 2-N-Pedigree.jpg',
         videoUrl: '',
         primeraDescripcion: '',
         segundaDescripcion: ''
@@ -95,7 +95,7 @@ const madres = [
     {
         name: 'MAGNUS VASALISA',
         pedigree: '',
-        imagenUrl: '',
+        imagenUrl: 'https://placehold.co/400x300?text=Sin%20Imagen',
         pedigreeUrl: '/images/Madres/MAGNUS-VASALISA/MAGNUS VASALISA-Pedigree.jpg',
         videoUrl: '',
         primeraDescripcion: '',
@@ -113,7 +113,7 @@ const madres = [
     {
         name: 'PEGASUS CELINE DU ROUET',
         pedigree: '',
-        imagenUrl: '',
+        imagenUrl: 'https://placehold.co/400x300?text=Sin%20Imagen',
         pedigreeUrl: '/images/Madres/PEGASUS-CELINE-DU-ROUET/PEGASUS-CELINE DU ROUET-Pedigree.jpg',
         videoUrl: '',
         primeraDescripcion: '',
@@ -140,8 +140,8 @@ const madres = [
     {
         name: 'PEGASUS IRINA',
         pedigree: '',
-        imagenUrl: '',
-        pedigreeUrl: '/images/Madres/PEGASUS-IRINA/PEGASUS IRINA-Pedigree.jpg',
+        imagenUrl: 'https://placehold.co/400x300?text=Sin%20Imagen',
+        pedigreeUrl: '/images/Madres/PEGASUS-IRINA/PEGASUS IRINA-Pedrigree.jpg',
         videoUrl: '',
         primeraDescripcion: '',
         segundaDescripcion: ''
@@ -158,8 +158,8 @@ const madres = [
     {
         name: 'PEGASUS SUMATRA',
         pedigree: '',
-        imagenUrl: '',
-        pedigreeUrl: '/images/Madres/PEGASUS-SUMATRA/PEGASUS-SUMATRA-Pedigree.jpg',
+        imagenUrl: 'https://placehold.co/400x300?text=Sin%20Imagen',
+        pedigreeUrl: '/images/Madres/PEGASUS-SUMATRA/PEGASUS SUMATRA-Pedigree.jpg',
         videoUrl: '',
         primeraDescripcion: 'PEGASUS SUMATRA fue criada en nuestro haras y desarrolló su carrera deportiva bajo la monta de Jimena Vidaurre en Primera Categoría 1,40 m. demostrando ser una competidora muy talentosa.Es descendiente de CHELTON REGOR Z, un hijo del semental belga CHELLANO Z en una madre CLINTON. CHELLANO Z, desciende de CONTENDER y de FAYENCE, propia hermana de CORRADO I (ganador de Aachen, World Cups y CSI).Algunos de sus hijos son PEGASUS CARACRUZ, PEGASUS SUMERIO y PEGASUS CONDOR.',
         segundaDescripcion: ''
@@ -208,7 +208,10 @@ const madres = [
                                         <button class="text-[#9C9158] toggle-button bg-white rounded-md px-1">Ver más</button>
                                     )}
                                     <div class="flex justify-start mt-4 space-x-4">
-                                        <a href={horse.pedigreeUrl} target="_blank" class="text-white bg-[#ab994b] py-2 px-6 sm:px-10 rounded-2xl border-solid border-2 border-[#ab994b] hover:bg-white hover:text-[#ab994b]">Pedigree</a>
+                                        {horse.pedigreeUrl && (
+                                           <a href={horse.pedigreeUrl} target="_blank" class="text-white bg-[#ab994b] py-2 px-6 sm:px-10 rounded-2xl border-solid border-2 border-[#ab994b] hover:bg-white hover:text-[#ab994b]">Pedigree</a>
+
+                                        )}
                                         {horse.videoUrl && (
                                             <a href={horse.videoUrl} target="_blank" class="bg-white text-[#ab994b] py-2 px-6 sm:px-10 rounded-2xl border-solid border-2 border-[#ab994b] hover:text-white hover:bg-[#ab994b]">Video</a>
                                         )}
