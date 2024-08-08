@@ -1,0 +1,98 @@
+---
+import ImgHeaderRemate2024 from './ImgHeaderRemate2024.astro'
+const horses = [
+  {
+    name: 'Pegasus Caracruz',
+    pedigree: 'PEGASUS CRISTIANO X CHELTON REGOR Z X SHARE THE GLORY (USA)',
+    imageUrl: '/images/Remate 2024/01-PegasusCaracruz-Portada.jpg',
+    pdfUrl: '/images/Remate 2024/01-PegasusCaracruz-Ficha.pdf'
+  },
+  {
+    name: 'Pegasus Neymar',
+    pedigree: 'PEGASUS CRISTIANO X ALNOK Z X CARIDOR Z',
+    imageUrl: '/images/Remate 2024/02-PegasusNeymar-Portada.jpg',
+    pdfUrl: '/images/Remate 2024/02-PegasusNeymar-Ficha.pdf'
+  },
+  {
+    name: 'Pegasus Clear Sun',
+    pedigree: 'CLON COOPER X IROKO X SANDRO Z',
+    imageUrl: '/images/Remate 2024/03-PegasusClearSun-Portada.jpg',
+    pdfUrl: '/images/Remate 2024/03-PegasusClearSun-Ficha.pdf'
+  },
+  {
+    name: 'Pegasus Helena',
+    pedigree: 'HAMLET COOPER X INDOCTRO X OBERON DU MOULIN',
+    imageUrl: '/images/Remate 2024/04-PegasusHelena-Portada.jpg',
+    pdfUrl: '/images/Remate 2024/04-PegasusHelena-Ficha.pdf'
+  },
+  {
+    name: 'Pegasus Con Anais',
+    pedigree: 'CONTENDRO I X ALNOK Z X OBERON DU MOULIN',
+    imageUrl: '/images/Remate 2024/05-PegasusConAnais-Portada.jpg',
+    pdfUrl: '/images/Remate 2024/05-PegasusConAnais-Ficha.pdf'
+  },
+  {
+    name: 'Pegasus Cliché',
+    pedigree: 'CLON COOPER X KANNAN X QUICK STAR',
+    imageUrl: '/images/Remate 2024/06-PegasusCliche-Portada.jpg',
+    pdfUrl: '/images/Remate 2024/06-PegasusCliche-Ficha.pdf'
+  },
+  {
+    name: 'Pegasus Chris Evert',
+    pedigree: 'PEGASUS CRISTIANO X EMILION X L. WENHERZ',
+    imageUrl: '/images/Remate 2024/07-PegasusChrisEvert-Portada.jpg',
+    pdfUrl: '/images/Remate 2024/07-PegasusChrisEvert-Ficha.pdf'
+  }
+]
+---
+
+<section>
+  <header class="relative">
+    <ImgHeaderRemate2024 />
+     </header>
+     <div class="bg-white md:p-8 relative z-10">
+       <div class="bg-white bg-opacity-75 p-4 mx-auto w-full max-w-7xl">
+         <h1 class="bg-[#ab994b] text-2xl md:text-3xl lg:text-4xl py-4 rounded-md text-center text-white w-11/12 md:w-3/4 lg:w-2/3 mx-auto mb-2">
+           Nuestro Remate 2024
+         </h1>
+         <p class="text-lg md:text-xl lg:text-xl text-center text-gray-800 w-11/12 md:w-3/4 lg:w-full mx-auto mt-2 leading-relaxed">
+           Nuestro remate anual, realizado dentro en el marco del prestigioso Torneo del Centro de la República en el Jockey Club Córdoba desde 2007, establece un estándar en la crianza boutique. <br>
+           Cada año, clientes nacionales e internacionales y apasionados de la equitación se unen en nuestro evento en busca de ejemplares de nuestra selección exclusiva, convirtiéndolo en una auténtica fiesta hípica.
+         </p>
+       </div>
+     </div>
+     <div class="bg-white">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+      {
+        horses.map((horse) => (
+          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col text-center mx-auto">
+            <a href="#">
+              <img class="rounded-t-lg mx-auto" src={horse.imageUrl} alt={horse.name} />
+            </a>
+            <div class="p-5 flex flex-col justify-between h-full">
+              <div>
+                <a href="#">
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    {horse.name}
+                  </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{horse.pedigree}</p>
+              </div>
+              <a
+                href={horse.pdfUrl}
+                target="_blank"
+                class="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-center text-white bg-[#ab994b] rounded-full hover:bg-[#e7cc82] dark:bg-[#1b3318] dark:hover:bg-[#2a5724] mt-auto"
+              >
+                Ver Ficha
+              </a>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+    <!-- Línea divisoria -->
+    <div class="col-span-full flex justify-center pt-6">
+      <div class="w-5/6 h-0.5 bg-gray-300"></div>
+    </div>
+  </div>
+</section>

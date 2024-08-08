@@ -2,28 +2,39 @@
 const staffMembers = [
   {
     name: 'Luis Grimaldi',
-    description: 'Dueño y Director de Cría',
+    description: ['Dueño','Director de Cría'],
     photo: '/images/Staff/Luis-Grimaldi.jpg'
   },
   {
     name: 'Emilia Grimaldi',
-    description: 'Comercialización y Eventos',
+    description: ['Comercialización', 'Eventos'],
     photo: '/images/Staff/Emilia-Grimaldi.jpg'
   },
   {
     name: 'Bárbara Dutruel',
-    description: 'Entrenadora',
+    description: ['Entrenadora', 'Amazona'],
     photo: '/images/Staff/Barbara-Dutruel.jpg'
   },
-  { name: 'Damian Ancic', description: 'Entrenador', photo: '/images/Staff/Damian-Ancic.jpg' },
-  { name: 'Javier Rizzo', description: 'Entrenador', photo: '/images/Staff/Javier-Rizzo.jpg' },
-  { name: 'Daniel Meubry', description: 'Veterinario', photo: '/images/Staff/Daniel-Meubry.jpg' },
+  { 
+    name: 'Damian Ancic', 
+    description: ['Entrenador','Jinete'], 
+    photo: '/images/Staff/Damian-Ancic.jpg' 
+  },
+  { 
+    name: 'Javier Rizzo', 
+    description: 'Entrenador', 
+   photo: '/images/Staff/Javier-Rizzo.jpg' 
+  },
+  { 
+    name: 'Daniel Meubry', 
+    description: 'Veterinario', 
+    photo: '/images/Staff/Daniel-Meubry.jpg' },
   {
     name: 'Sergio Cisterna',
     description: 'Cuidador de caballos',
     photo: '/images/Staff/Sergio-Cisterna.jpg'
   }
-]
+];
 ---
 
 <style>
@@ -63,7 +74,15 @@ const staffMembers = [
               </div>
             </div>
             <h3 class="text-xl font-semibold">{member.name}</h3>
-            <p class="text-gray-600">{member.description}</p>
+            <div class="text-gray-600">
+              {Array.isArray(member.description) ? (
+                member.description.map((desc) => (
+                  <p>{desc}</p>
+                ))
+              ) : (
+                <p>{member.description}</p>
+              )}
+            </div>
           </div>
         ))
       }
