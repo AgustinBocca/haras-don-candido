@@ -140,11 +140,11 @@ const contactMembers = [
 
         <!-- Formulario de Contacto -->
         <div class="space-y-4">
-          <form>
+          <form action="https://formsubmit.co/agustin.bocca92@gmail.com" method="POST">
             <div>
               <label for="name" class="block text-sm font-medium text-gray-600">Nombre</label>
               <input
-                disabled
+                required
                 type="text"
                 id="name"
                 name="name"
@@ -156,7 +156,7 @@ const contactMembers = [
                 >Correo Electrónico</label
               >
               <input
-                disabled
+                required
                 type="email"
                 id="email"
                 name="email"
@@ -166,7 +166,7 @@ const contactMembers = [
             <div>
               <label for="message" class="block text-sm font-medium text-gray-600">Mensaje</label>
               <textarea
-                disabled
+                required
                 id="message"
                 name="message"
                 rows="4"
@@ -174,7 +174,7 @@ const contactMembers = [
               ></textarea>
             </div>
             <button
-              type="button"
+              type="submit"
               class="inline-block bg-[#014618] text-white px-6 py-2 mt-2 rounded-md hover:bg-[#22703c] transition duration-300"
             >
               Enviar Mensaje
