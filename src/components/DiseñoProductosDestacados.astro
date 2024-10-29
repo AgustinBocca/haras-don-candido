@@ -50,12 +50,12 @@ const productos_destacados = [
     name: 'Pegasus Chelsea',
     pedigree: 'Chester Z x Indorado x Stakkato',
     imageUrl: '/images/Productos-Destacados/P.CHELSEA (PARAGUAY)-100.jpg',
-    premios: ['Chester Z x Indorado x Stakkato']
+    premios: ['Sub-campeona Nacional de Paraguay']
   },
   {
     name: 'Pegasus Cristiano',
     pedigree: 'Contendro I x Stakkato x Escudo I',
-    imageUrl: '/images/Productos-Destacados/P.CRISTIANO (ARG)-100.jpg',
+    imageUrl: '/images/Productos-Destacados/P.CRISTIANO (ARG)-100.png',
     premios: ['3° puesto Campeonato Criadores III AAFE 2019']
   },
   {
@@ -88,7 +88,7 @@ const productos_destacados = [
     name: 'Pegasus Porvenir',
     pedigree: 'Con Air x Indorado x Stakkato',
     imageUrl: '/images/Productos-Destacados/P.PORVENIR (ARG)-100.jpg',
-    premios: ['Con Air x Indorado x Stakkato']
+    premios: ['Ganador Premio Criadores I AAFE 2022']
   }
 ]
 ---
@@ -113,13 +113,13 @@ const productos_destacados = [
             </div>
             <div class="p-5 flex flex-col justify-start flex-grow">
               <div>
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <h5 class="mb-2 text-2xl text-pretty font-bold tracking-tight text-gray-900 dark:text-white">
                   {horse.name}
                 </h5>
-                <p class="mb-3 font-bold text-[#ab994b] dark:text-gray-400">{horse.pedigree}</p>
+                <p class="mb-3 font-bold text-[#ab994b] text-pretty dark:text-gray-400">{horse.pedigree}</p>
                 <div class="text-left">
                   {horse.premios.map((premio) => (
-                    <p  class="text-gray-600 text-justify flex items-start gap-2 mb-1">
+                    <p  class="text-gray-600 text-left flex items-start gap-2 mb-1">
                       <i class="fa fa-trophy fa-1x mt-1" /> {premio}
                     </p>
                   ))}

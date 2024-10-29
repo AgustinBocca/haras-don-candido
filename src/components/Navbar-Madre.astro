@@ -76,77 +76,67 @@
 </section>
 
 <style>
-  .btn-brand-color {
-    background-color: #ab994b;
-  }
-
-  .btn-brand-color:hover {
-    background-color: #ab994b;
-  }
-
-  .background-navbar {
-    background: linear-gradient(180deg,
-        rgba(182, 142, 72, 0.589) 0%,
-        rgba(204, 159, 82, 0.404) 41%,
-        rgba(221, 172, 88, 0.02) 100%);
-  }
-
-  .scrolled-background {
-    backdrop-filter: blur(10px);
-    background-color: #9c925d57;
-  }
-
-  .scrolled-logo {
-    background-color: transparent;
-    padding: 5px;
-    border-radius: 5px;
-  }
-
-  .scrolled-text {
-    color: #fff;
-  }
-
-  .navbar-button {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 5px;
-    color: #fff;
-    font-size: 17px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-  }
-
-  .navbar-button:hover::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #ab994b;
-    visibility: visible;
-    transform: scaleX(1);
-    transition: all 0.3s ease-in-out;
-  }
-
-  .navbar-button::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #ab994b;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out;
-  }
-
-  @media (min-width: 768px) {
+    /* Navbar */
+    .btn-brand-color {
+      background-color: #ab994b;
+    }
+    .btn-brand-color:hover {
+      background-color: #ab994b;
+    }
+    .background-navbar {
+      background: linear-gradient(180deg, rgba(182, 142, 72, 0.589) 0%, rgba(204, 159, 82, 0.404) 41%, rgba(221, 172, 88, 0.02) 100%);
+    }
+    .scrolled-background {
+      backdrop-filter: blur(10px);
+      background-color: #9c925d57;
+    }
+    .scrolled-logo {
+      padding: 5px;
+      border-radius: 5px;
+    }
+    .scrolled-text {
+        color: white !important;
+}
+    .navbar-button {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 5px;
+      color: #ab994b;
+      font-size: 17px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    /* Underline Effect */
+    .navbar-button:hover::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #ab994b;
+      visibility: visible;
+      transform: scaleX(1);
+      transition: all 0.3s ease-in-out;
+    }
+    .navbar-button::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #ab994b;
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: all 0.3s ease-in-out;
+    }
+    
+    @media (min-width: 768px) {
   .dropdown-menu {
     background-color: #fff; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -173,6 +163,9 @@
       border-radius: 5px;
     }
 
+    .scrolled-text {
+        color: #ab994b !important;
+}
     .navbar-button {
       transition: background-color 0.3s ease;
       padding: 8px 12px;
@@ -214,45 +207,49 @@
     }
   }
 
-  @media (min-width: 768px) {
-    .navbar-button {
-      margin: 0 10px;
+  
+    /* Navbar Button Margin */
+    @media (min-width: 768px) {
+      .navbar-button {
+        margin: 0 10px;
+      }
+      .navbar-button::before {
+        height: 4px;
+      }
     }
+  </style>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.getElementById('menu-toggle');
+  const navbarMenu = document.getElementById('navbar-default');
+  const navbar = document.getElementById('navbar');
+  const logo = document.getElementById('logo');
+  const navbarButtons = document.querySelectorAll('.navbar-button');
 
-    .navbar-button::before {
-      height: 4px;
-    }
+  if (menuToggle && navbarMenu) {
+    menuToggle.addEventListener('click', function() {
+      navbarMenu.classList.toggle('hidden');
+    });
   }
 
-  .group-hover\:block:hover > ul {
-    display: block;
+  if (navbar && logo) {
+    window.addEventListener('scroll', function() {
+      const scrollPosition = window.scrollY;
+
+      if (scrollPosition > 50) {
+        navbar.classList.add('scrolled-background');
+        logo.classList.add('scrolled-logo');
+        navbarButtons.forEach(button => button.classList.add('scrolled-text'));
+      } else {
+        navbar.classList.remove('scrolled-background');
+        logo.classList.remove('scrolled-logo');
+        navbarButtons.forEach(button => button.classList.remove('scrolled-text'));
+      }
+    });
   }
-</style>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.getElementById('menu-toggle');
-    const navbarMenu = document.getElementById('navbar-default');
-    const navbar = document.getElementById('navbar');
-    const logo = document.getElementById('logo');
+});
 
-    if (menuToggle && navbarMenu) {
-      menuToggle.addEventListener('click', function() {
-        navbarMenu.classList.toggle('hidden');
-      });
-    }
 
-    if (navbar) {
-      window.addEventListener('scroll', function() {
-        const scrollPosition = window.scrollY;
-
-        if (scrollPosition > 50) {
-          navbar.classList.add('scrolled-background');
-          if (logo) logo.classList.add('scrolled-logo');
-        } else {
-          navbar.classList.remove('scrolled-background');
-          if (logo) logo.classList.remove('scrolled-logo');
-        }
-      });
-    }
-  });
-</script>
+  </script>
+  
