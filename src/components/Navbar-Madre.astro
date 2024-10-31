@@ -1,3 +1,12 @@
+---
+import {getLangFromUrl, useTranslations} from '@/i18n/utils';
+import { getRelativeLocaleUrl } from 'astro:i18n';
+
+const {currentLocale} = Astro;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
 <section>
   <nav id="navbar" class="fixed w-full z-30 top-0 left-0 bg-transparent transition-colors duration-300 ml-auto">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:pl-0">
@@ -16,57 +25,58 @@
       <div class="w-full md:block md:w-auto hidden" id="navbar-default">
         <ul class="flex flex-col text-2xl p-0 mt-4 font-light border border-gray-200 rounded-lg md:flex-row md:space-x-1 md:mt-0 md:border-0 ml-auto">
           <li>
-            <a href="/" aria-current="page"
+            <a href= {getRelativeLocaleUrl( currentLocale ?? '', '')}
+               aria-current="page"
               class="flex-row justify-center text-white cursor-pointer font-medium rounded-lg px-3 py-2 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-110 scale-90 opacity-90 hover:opacity-100 navbar-button">
-              Home
+              {t('nav.home')}
             </a>
           </li>
           <li>
-            <a href="/#pilares"
+            <a href={`${getRelativeLocaleUrl(currentLocale ?? '')}#pilares`}
               class="flex-row justify-center text-white cursor-pointer font-medium rounded-lg px-3 py-2 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-110 scale-90 opacity-90 hover:opacity-100 navbar-button">
-              Pilares
+              {t('nav.pilares')}
             </a>
           </li>
           <li>
-            <a href="/#staff"
+            <a href={`${getRelativeLocaleUrl(currentLocale ?? '')}#staff`}
               class="flex-row justify-center text-white cursor-pointer font-medium rounded-lg px-3 py-2 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-110 scale-90 opacity-90 hover:opacity-100 navbar-button">
-              Staff
+              {t('nav.pilares')}
             </a>
           </li>
           <li>
-            <a href="/productos-destacados"
+            <a href= {getRelativeLocaleUrl( currentLocale ?? '', '/productos-destacados')}
               class="flex-row justify-center text-white cursor-pointer font-medium rounded-lg px-3 py-2 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-110 scale-90 opacity-90 hover:opacity-100 navbar-button">
-              Productos Destacados
+              {t('nav.ProductosDestacados')}
             </a>
           </li>
           <li class="relative group">
             <a href="#" class="flex-row justify-center text-white cursor-pointer font-medium rounded-lg px-3 py-2 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-110 scale-90 opacity-90 hover:opacity-100 navbar-button">
-              Colecciones
+              {t('nav.Colecciones')}
               <svg class="ml-1 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </a>
             <ul class="dropdown-menu absolute left-0 hidden group-hover:block w-full">
               <li>
-                <a href="/remate-2023"
-                  class="block px-4 py-2 text-sm ">Colección 2023</a>
+                <a href= {getRelativeLocaleUrl( currentLocale ?? '', '/remate-2023')}
+                  class="block px-4 py-2 text-sm ">{t('nav.Coleccion2023')}</a>
               </li>
               <li>
-                <a href="/remate-2024"
-                  class="block px-4 py-2 text-sm ">Colección 2024</a>
+                <a href= {getRelativeLocaleUrl( currentLocale ?? '', '/remate-2024')}
+                  class="block px-4 py-2 text-sm ">{t('nav.Coleccion2024')}</a>
               </li>
             </ul>
           </li>
           <li>
-            <a href="/yeguas-madres"
+            <a href={`${getRelativeLocaleUrl(currentLocale ?? '')}#contacto`}
               class="flex-row justify-center text-white cursor-pointer font-medium rounded-lg px-3 py-2 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-110 scale-90 opacity-90 hover:opacity-100 navbar-button">
-              Yeguas Madre
+              {t('nav.YeguasMadre')}
             </a>
           </li>
           <li>
             <a href="/#contacto"
               class="flex-row justify-center text-white cursor-pointer font-medium rounded-lg px-3 py-2 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-110 scale-90 opacity-90 hover:opacity-100 navbar-button">
-              Contacto
+              {t('nav.Contacto')}
             </a>
           </li>
         </ul>
