@@ -1,26 +1,31 @@
 ---
+import { getI18N } from "@/i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
 const contactMembers = [
   {
     name: 'Luis Grimaldi',
-    description: 'Dueño y Director de Cría',
+    description: [i18n.Staff.DESCRIPTION_1, i18n.Staff.SUB_DESCRIPTION_1],
     photo: '/images/Staff/Luis-Grimaldi.jpg',
     phone: '+54 3564 566528'
   },
   {
     name: 'Emilia Grimaldi',
-    description: 'Comercialización y Eventos',
+    description: [i18n.Staff.DESCRIPTION_2, i18n.Staff.SUB_DESCRIPCION_2],
     photo: '/images/Staff/Emilia-Grimaldi.jpg',
     phone: '+54 3564 570388'
   },
   {
     name: 'Bárbara Dutruel',
-    description: 'Entrenadora',
+    description: [i18n.Staff.DESCRIPTION_3, i18n.Staff.SUB_DESCRIPTION_3],
     photo: '/images/Staff/Barbara-Dutruel.jpg',
     phone: '+54 3516 086263'
   },
   {
     name: 'Damian Ancic',
-    description: 'Entrenador',
+    description: [i18n.Staff.DESCRIPTION_4, i18n.Staff.SUB_DESCRIPCION_4],
     photo: '/images/Staff/Damian-Ancic.jpg',
     phone: '+543516536995'
   }
@@ -37,7 +42,7 @@ const contactMembers = [
   <div class="bg-white">
     <!-- Contenedor de Contacto staff -->
     <div class="container sm:px-14 mx-auto text-center flex flex-wrap justify-center gap-3 mt-8">
-      {contactMembers.map((member) => (
+      {contactMembers.map((member, index) => (
         <div class="bg-slate-200 p-4 rounded-lg text-center w-full sm:w-1/3 lg:w-[23%] flex flex-col items-center border-2 mx-4 sm:mx-0">
           <div class="flex items-center mb-2">
             <div class="w-20 h-20 sm:w-24 sm:h-24 flex-shrink-0 overflow-hidden rounded-full mr-4">
@@ -49,7 +54,11 @@ const contactMembers = [
             </div>
             <div class="flex-1">
               <h3 class="text-lg sm:text-xl font-semibold text-gray-900">{member.name}</h3>
-              <p class="text-sm sm:text-base text-gray-600 mb-2">{member.description}</p>
+              <div class="text-sm sm:text-base text-gray-600 mb-2">
+                {member.description.map((desc, descIndex) => (
+                  <p id={`desc-${index}-${descIndex}`}>{desc}</p>
+                ))}
+              </div>
               <div class="flex items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +78,7 @@ const contactMembers = [
           </div>
         </div>
       ))}
-    </div>
+    </div>    
     
     <!-- Contenedor de Grid para Contacto y Formulario -->
     <div class="mx-auto max-w-screen-lg px-4 sm:px-8 md:px-16 mt-8">
@@ -82,11 +91,11 @@ const contactMembers = [
             alt="Logo Haras Don Candido"
           />
           <div class="py-0">
-            <p class="text-base sm:text-xl font-semibold text-gray-500">Contactanos</p>
+            <p class="text-base sm:text-xl font-semibold text-gray-500">{i18n.Contact.TITLE}</p>
             <span class="block text-lg sm:text-2xl font-semibold text-gray-900">
-              TE
+             {i18n.Contact.DESCRIPTION_1}
               <br />
-              ASESORAMOS
+              {i18n.Contact.DESCRIPTION_2}
             </span>
           </div>
           <div>
@@ -142,7 +151,7 @@ const contactMembers = [
         <div class="space-y-4">
           <form action="https://formsubmit.co/harasdoncandido@gmail.com" method="POST">
             <div>
-              <label for="name" class="block text-sm font-medium text-gray-600">Nombre</label>
+              <label for="name" class="block text-sm font-medium text-gray-600">{i18n.Contact.NAME}</label>
               <input
                 required
                 type="text"
@@ -153,7 +162,7 @@ const contactMembers = [
             </div>
             <div>
               <label for="email" class="block text-sm font-medium text-gray-600"
-                >Correo Electrónico</label
+                >{i18n.Contact.EMAIL}</label
               >
               <input
                 required
@@ -164,7 +173,7 @@ const contactMembers = [
               />
             </div>
             <div>
-              <label for="message" class="block text-sm font-medium text-gray-600">Mensaje</label>
+              <label for="message" class="block text-sm font-medium text-gray-600">{i18n.Contact.MESSAGE}</label>
               <textarea
                 required
                 id="message"
@@ -177,7 +186,7 @@ const contactMembers = [
               type="submit"
               class="inline-block bg-[#014618] text-white px-6 py-2 mt-2 rounded-md hover:bg-[#22703c] transition duration-300"
             >
-              Enviar Mensaje
+            {i18n.Contact.SEND_MESSAGE}
             </button>
           </form>
         </div>

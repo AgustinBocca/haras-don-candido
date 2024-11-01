@@ -1,0 +1,220 @@
+{
+    "Home":{
+        "AUCTION": "Auction",
+        "SEE_MORE": "See More",
+        "SEE_LESS": "See less",
+        "SEE_FILE": "See file"
+    },
+
+    "REMATES":{
+        "TITLE_1": "Our 2023 Auction",
+        "DESCRIPTION_1": "Our annual auction, held within the framework of the prestigious Torneo del Centro de la República at the Jockey Club Córdoba since 2007, sets a standard in boutique breeding.",
+        "DESCRIPTION_2":"Every year, national and international clients and horse riding enthusiasts come together at our event in search of horses from our exclusive selection, making it a true equestrian festival.",
+        "TITLE_2": "Our 2024 Auction"
+    },
+
+    "Pillars": {
+    "TITLE": "Pillars",
+    "CARD_PILLARS": [
+        {
+            "INFO_TITLE": "Heritage and Trajectory",
+            "INFO_TEXT_1": "Our history in the equestrian world dates back to 1981 with 'Haras Don Florentino', where we excelled in breeding Thoroughbred Race Horses, currently positioning ourselves among the best studs in this discipline in the country.",
+            "INFO_TEXT_2": "Years later, keeping alive the tradition and passion for breeding quality horses, we expanded into breeding show jumping horses, leading to the introduction of 'Haras Don Cándido'. This diversification not only enriched our family legacy but also broadened our experience and knowledge in equine breeding, generating synergies that allowed us to scale and excel in different fields within the equestrian activity.",
+            "IMG": "/images/Pilares/Herencia.svg"
+        },
+        {
+            "INFO_TITLE": "Genetic Excellence",
+            "INFO_TEXT_1": "Our magnificent Gene Pool is the result of decades of careful selection and breeding. Since our beginnings, we have bet on elite genetics, importing our first mares from Europe.",
+            "INFO_TEXT_2": "Each horse we breed is backed by a unique combination of high-performance bloodlines, allowing us to produce foals with the potential to stand out in the best arenas both nationally and internationally.",
+            "IMG": "/images/Pilares/Genetica.svg"
+        },
+        {
+            "INFO_TITLE": "Care and Dedication",
+            "INFO_TEXT_1": "Our commitment to the care and well-being of our horses is unmatched. We have a trained and qualified team dedicated to ensuring that each horse receives the individualized attention it needs to thrive as an athlete.",
+            "IMG": "/images/Pilares/Cuidado.svg"
+        },
+        {
+            "INFO_TITLE": "Quality Lands and Resources",
+            "INFO_TEXT_1": "Located in agricultural lands in La Francia, Córdoba, our facilities boast excellent pastures and first-class infrastructure.",
+            "INFO_TEXT_2": "This allows us to provide our horses with an optimal environment for their physical and mental development.",
+            "IMG": "/images/Pilares/Tierras.svg"
+        },
+        {
+            "INFO_TITLE": "Proven Results in Competition",
+            "INFO_TEXT_1": "Our products have proven their worth in the most demanding show jumping arenas in the country and internationally. We are proud to see how the horses bred in our stud",
+            "INFO_TEXT_2": "shine in high-level competitions, carrying our name and reputation to the highest echelons.",
+            "IMG": "/images/Pilares/Resultados.svg"
+        },
+        {
+            "INFO_TITLE": "Commitment to Continuous Excellence",
+            "INFO_TEXT_1": "We are committed to continuously seeking excellence in everything we do. Whether through the adoption of new breeding technologies, the introduction of new genetic lines,",
+            "INFO_TEXT_2": "the training of our staff, or the ongoing study of the equestrian world at the international level, we are constantly looking for ways to improve and exceed expectations.",
+            "IMG": "/images/Pilares/Compromiso.svg"
+        }
+    ]
+},
+
+    
+    "Slogan":{
+        "TITLE_SLOGAN": "FLYING HIGHER"
+    },
+
+    "Staff":{
+        "DESCRIPTION_1": "Owner",
+        "SUB_DESCRIPTION_1": "Breeding Director",
+        "DESCRIPTION_2":"Marketing",
+        "SUB_DESCRIPCION_2": "Events",
+        "DESCRIPTION_3": "Coach",
+        "SUB_DESCRIPTION_3": "Amazon",
+        "DESCRIPTION_4": "Coach",
+        "SUB_DESCRIPCION_4": "Rider",
+        "DESCRIPTION_5": "Veterinarian",
+        "DESCRIPTION_6": "Horse Caretaker" 
+    },
+
+    "Contact":{
+        "TITLE": "Contact us",
+        "DESCRIPTION_1": "WE",
+        "DESCRIPTION_2":"ADVISE YOU",
+        "NAME": "Name",
+        "EMAIL": "Email",
+        "MESSAGE": "Message",
+        "SEND_MESSAGE": "Send Message"
+    },
+
+    "Featured Products":{
+        "TITLE": "Featured Products",
+        "CARD_PRODUCTS": [
+            {
+                "NAME":"Pegasus Athenea",
+                "AWARDS_1": "Winner of the 2* General San Martín Grand Prize 2019",
+                "AWARDS_2": "3rd place Grand Prix CSI 2* Haras El Capricho 2019",
+                "AWARDS_3": "Individual Silver Medal Young Riders FEI South American Championships Chile 2018"
+            },
+            {
+                "NAME":"Pegasus Aymar",
+                "AWARDS_1": "2nd place Puma Cup La Cautiva Establishment 2024",
+                "AWARDS_2": "2nd place Mini GPCAE 2022",
+                "AWARDS_3": "5th place Mini GP CSI 2* CAE 2022",
+                "AWARDS_4": "2nd place Preliminary Cat. Polo Jumping Tour 2022",
+                "AWARDS_5": "2nd place Breeders Championship I 2019"
+            },
+            {
+                "NAME":"Pegasus Balotelli",
+                "AWARDS_1": "2nd place Expo Nuestros Caballos AAFE 2023",
+                "AWARDS_2": "Loose Jump Champion in Manga II AAFE 2022"
+            },
+            {
+                "NAME":"Pegasus Chau Amore",
+                "AWARDS_1": "5th GP Sol de Mayo CSI 2* 2023",
+                "AWARDS_2": "Silver Medal for teams ODESUR Games 2022",
+                "AWARDS_3": "4th place individual ODESUR Games 2022",
+                "AWARDS_4": "4th place in the National First Category 2022",
+                "AWARDS_5": "Winner of the 1.50m GP CAE 2021",
+                "AWARDS_6": "Winner of GP Technopolo 2021"
+            },
+            {
+                "NAME":"Pegasus Chelsea",
+                "AWARDS_1": "Paraguay National Sub-Champion"
+            },
+            {
+                "NAME":"Pegasus Cristiano",
+                "AWARDS_1": "3rd place Breeders Championship III AAFE 2019"
+            },
+            {
+                "NAME":"Pegasus Lennon",
+                "AWARDS_1": "Reserve Circuit Champion 12-14 equitation WEF Wellington, Florida",
+                "AWARDS_2": "Winner THIS Medal WEF Wellington, Florida",
+                "AWARDS_3": "Winner THIS Medal HITS Chicago, Illinois"
+            },
+            {
+                "NAME":"Pegasus Leprevost",
+                "AWARDS_1": "CSI* winner 1.40 m. April 2023",
+                "AWARDS_2": "Winner of the Mini GP 1.35/40 m. CAE 2023"
+            },
+            {
+                "NAME":"Pegasus Lewis",
+                "AWARDS_1": "4th place Individual FEI North American Youth Championships 2023",
+                "AWARDS_2": "National Champion Second Category 2022",
+                "AWARDS_3": "3rd place Breeders III AAFE 2019"
+            },
+            {
+                "NAME":"Pegasus Porvenir",
+                "AWARDS_1": "Winner of the Breeders Award I AAFE 2022"
+            }
+        ]
+    },
+
+    "Broodmares":{
+        "TITLE": "Broodmares",
+          "CARD_BROODMARES":    [
+          {
+             "NAME": "ATHLETA VDL",
+              "DESCRIPTION": "ATHLETA VDL comes from the prestigious Hanoverian bloodline and was imported by our stud farm from Holland. She is a direct descendant of the extraordinary STAKKATO out of a ESCUDO I dam and is a full sister to STAR POWER (a KWPN-approved stallion with approved offspring competing on the most demanding tracks in Europe). ATHLETA VDL stands out as an elite broodmare, and is also a recognised hallmark of quality in Argentine horse breeding. In addition to her remarkable genetics, this mare excelled in the sporting field, being the winner of the GP Torneo del Centro 2018, 4th place CSI 2* 1.40 m. Haras El Capricho 2014 and National Sub-Champion Cat. Preliminary 2013 ridden by Damian Ancic. Whoever has a son of ATHLETA VDL, has a guaranteed champion.His descendants are not only recognized in the most competitive tracks in the country, but also internationally: PEGASUS ATHENEA, (Silver Medal Young Riders Chile 2018, 3rd place Gran Premio Haras El Capricho and Winner Gran Premio 2 * Gral. San Martín 2019), PEGASUS LEWIS (4th place Individual FEI North American Youth Championships 2023 and 3rd place Breeders III 2019), PEGASUS LEPREVOST (Winner CSI * 1.40 m. Haras Abril and Winner Mini GP 1.35 / 40 m. CAE 2023), PEGASUS AYMAR (2nd place Copa Puma Est. La Cautiva 2023, 3rd place Mini GPCAE 2022 and 2nd place Breeders and Series I 2019), PEGASUS CRISTIANO (3rd place Breeders Cup and finalist Series III Young Horses AAFE 2019 ), PEGASUS GRAN ATHLETA (record price Auction 2020), among other great specimens."
+          },
+          {
+              "NAME": "CELIN R&D Z" ,
+              "DESCRIPTION": "CELIN R&D Z, imported by our stud from Holland, is a mare of remarkable sporting and genetic ancestry. A direct descendant of Olympic medallist CARDENTO, recognised both for his success in show jumping and for his influence as an outstanding breeder. Her maternal lines include LA CASSIA R&D (1.35 m.), maternal sister of the KWPN approved stallion, SIR OLDENBURG.She is also a granddaughter of the outstanding stallion LANDOR S, known for producing Grand Prix jumpers such as LEOVILLE, LOBSTER and L´ARC de TRIOMPHE. CELIN R&D Z is the dam of PEGASUS CELINE DU ROUET, a daughter of BALOU DU ROUET who is part of our stud farm. CELIN R&D Z is currently taking her first steps in her sporting career under the saddle of Damian Ancic. This mare represents the best in terms of athletic excellence and genetic potential."
+          },
+          {
+              "NAME":"DALINDE VDL",
+              "DESCRIPTION": "DALINDE VDL, imported from Holland, is a distinguished mare by the legendary CARDENTO, renowned for both his high-level achievements and his outstanding influence as a stallion. CARDENTO, Olympic team silver medallist in Athens and winner of multiple international competitions, has left a significant legacy with offspring such as CARRERA VDL, CORPORAL VDL, BARDOLINO, MATRIX and NICE STEPHANIE, all of whom are world-renowned. On the maternal line, DALINDE VDL is descended from GOODTIMES, known for producing great champions and a descendant of the renowned NIMMERDOR.DALINDE VDL competed under Damian Ancic with good results in 1.30 m. tests before retiring due to injury. As our stud's dam, she has proven to be exceptional, with offspring such as the renowned P. CHAU AMORE: 5th place GP Sol de Mayo CSI 2* 2023, Silver Medal for teams and 4th place individually ODESUR Games 2022, 4th place National First 2022, Tokyo 2021 qualifier, GP 1.50 m winner. CAE 2021 and Winner GP Technopolo 2021. Other notable sons are P. AMORE MIO, P. CANDY CRUSH, P. LEBRON and P. LENNON (4th place 1.35 m. for 7-year-old Horses WEF Ocala 2023). DALINDE VDL represents a valuable asset both for our stud farm and for jumping equine breeding, as she has proven that the quality of her progeny is an exceptional influence for the equestrian world."
+          },
+          {
+              "NAME":"DINA VDL",
+              "DESCRIPTION": "DINA VDL, imported from Holland by our stud farm, has an exceptional pedigree that combines the outstanding lines of INDOCTRO and CONTENDER. She developed her career under the saddle of Bárbara Dutruel and, from the beginning, she showed a lot of attitude and potential on the tracks. Thus, in 2013 she was crowned Champion of New Horses 1.20 m. in Rosario and later National Champion of Amazons. In 2014, she was Sub-champion of the Anniversary Tournament of the Jockey Club Córdoba and the following year she was crowned Provincial Champion of Córdoba in First Category. In 2016, the triumphs continued and DINA VDL was Winner of the Regional GP of Rosario and Champion in First Category, Champion of the Championship Hurdle One and Provincial Sub-champion of Córdoba. Finally, in 2017 she was crowned First Category Champion of the Anniversary Tournament of the Jockey Club Córdoba.DINA VDL is undoubtedly one of the elite mothers of our stud farm, transmitting to her children her delicacy, competitiveness and big heart to compete on the tracks. Among her notable offspring are PEGASUS DILLINGER, highlighted as Champion in Our Horses 2014 and Winner of the FEI Challenge Rosario 1.20 m. 2018, as well as Second Category Champion 1.20 m. in the Torneo del Centro de la República 2019 and Winner of the Selectiva FEI AMERICAS CHAMPIONSHIP 2021 Junior 1.40 m. with his owner Delfina Spinella. Other outstanding children are P. SINSAJO, P. VODOO and P. UNITED, who continue their mother's legacy of excellence on the tracks. DINA VDL has not only left her mark on the tracks, but has also set a quality standard in the breeding of jumping horses."
+          },
+          {
+              "NAME":"GAMA ILIANA",
+              "DESCRIPTION":"GAMA ILIANA, an outstanding descendant of IROKO, is an elite dam at our stud farm. This mare was acquired in 2015 by our stud farm, having developed until then an outstanding sporting career under the saddle of Luis Gustavo Vinhaes Ferreira. Together with this rider, she participated in the most demanding tests in the country, both nationally and internationally, obtaining achievements such as 5th place in the CSI 2* World Cup 1.60 m. at Haras El Capricho in 2014 and many classifications in Grand Prix. She continued her career under the saddle of Emilia Grimaldi, competing in the Junior, Young Riders and First categories. In 2015 she was Provincial Sub-champion of Córdoba and National Junior Sub-champion, and in 2017 she achieved 3rd place in the FEA Grand Prix at the Argentine Equestrian Club. GAMA ILIANA transmits her strength and attitude for jumping to her offspring. Some of them are PEGASUS CLEAR SUN and PEGASUS IVANNA (Uruguay)."
+          },
+          {
+              "NAME":"GRAMA ASCOCHINGA",
+              "DESCRIPTION": "GRAMA ASCOCHINGA is an outstanding performer bred in Argentina. This mare had a great sporting career, competing in tests up to 1.50 m. and today she is a great breeder in our breeding stock."
+          },
+          {
+              "NAME":"HINULA 2-N"
+          },
+          {
+              "NAME":"KENTUCKEY SR Z",
+              "DESCRIPTION":"KENTUCKEY SR Z is an imported Dutch mare who carries with her an impressive pedigree. She is by the renowned stallion KANNAN, who was ranked number one in the WBFSH World Show Jumping Stallion Rankings in 2014 and has consistently remained in the Top 20 Sires of Winners for the past decade. KANNAN is the sire of NINO DES BUISSONNETS, winner of the individual Gold Medal at the London 2012 Olympics, and, with over 600 winning products in CSI competitions, this stallion has left a notable mark on equestrian sport. In the maternal line of KENTUCKEY SR Z we find QUICK STAR, sire of the legendary BIG STAR, Olympic gold medallist both as a team and individually. Thus, with NINO DES BUISSONNETS and BIG STAR, this mare has two Olympic medallists in her genealogy. KENTUCKEY SR Z has distinguished itself as a producer of exceptional sons. Some of them are P. CLICHÉ, P. KENIA, P. BALOTELLI (record auction price and AAFE 2022 I Loose Jumping Champion), P. CAMERON and P. LOBO."
+          },
+          {
+              "NAME":"MAGNUS ANAIS",
+              "DESCRIPTION":"MAGNUS ANAIS, daughter of the outstanding ALNOK Z, has had a very good sporting career under the saddle of Damián Ancic and Martin Dopazo, achieving notable results such as 2nd place in the CSIO 2* 1.40 M. Haras El Capricho in 2017, Champion in the First Category of the Torneo del Centro in 2016, Champion in the New Horses Category 2013, and multiple classifications in 1.40 m. tests and Mini Grand Prix. As an outstanding breeding mare at our stud farm, MAGNUS ANAIS transmits to her children a remarkable cleanliness and technique in jumping. Among her offspring, P. CON ANAIS, P. STALIN and P. LOBA stand out."
+          },
+          {
+              "NAME":"MAGNUS ANTIGONA",
+              "DESCRIPTION": "MAGNUS ANTIGONA, daughter of the renowned Alnok Z, is a mare of exceptional skill who, ridden by Damián Ancic and then by Emilia Grimaldi, stood out by winning the Intermediate Category Championship at Haras El Capricho in 2014 and shining in Mini Grand Prix. As an outstanding sire at our stud, Magnus Antigona passes on her firmness and big heart in jumping to her sons. Her offspring include specimens such as P. NEYMAR, P. CRISTOBAL, P. UNLIMITED, P. STRIKE FORCE, P. LÍDER, P. INTRUSO (Colombia), P. ARTEMISA and P. PERLA NEGRA."
+          },
+          {
+              "NAME":"MAGNUS VASALISA"
+          },
+          {
+              "NAME":"PEGASUS ATHENA",
+              "DESCRIPTION":"PEGASUS ATHENEA is a star in our broodmare stable, bred by our stud farm and a direct descendant of the prestigious INDORADO, two-time winner of the Bundeschampionat qualifiers and top 10 there, as well as a great international performer under Jur Vrieling. PEGASUS ATHENEA also bears the quality seal of ATHLETA VDL, her dam, who is a source of pride for our stud farm due to her outstanding transmitting ability and the exceptional quality of her offspring. In her own sporting career, P. ATHENEA has shone from the very beginning, being crowned National Sub-Champion of Young Horses in 2014 under Damian Ancic. In 2017, she won the First Category Sub-championship at the Cordillerano Tournament and, later, she won the individual Silver Medal in the Young Riders Category at the FEI Southamerican Championships Chile 2018, ridden by Emilia Grimaldi. In 2019, she was the winner of the Gran Premio Gral. San Martín 2* CAE and obtained a notable 3rd place in the FEI World Cup 1.60 m. at Haras El Capricho, ridden by Martin Dopazo. P. ATHENEA is currently the dam of numerous outstanding products that continue her legacy in equestrian sport. Her descendants include names such as P. POMMERY, P. CHELSEA (National Runner-up of Paraguay 2020), P. WHITAKER (4th place in the Longines Global Tour Mexico 2022 1.35 m. and 8th place in the CSI Final 7 years 1.30/35 m. at La Silla 2022), P. CHAMPEIN (National Champion of Young Horses I in 2020) and P. PORVENIR (Winner of the Breeders' Award I AAFE 2022)."
+          },
+          {
+              "NAME":"PEGASUS CELINE DU ROUET"
+          },
+          {
+              "NAME":"PEGASUS EVITA"
+          },
+          {
+              "NAME":"PEGASUS INDIRA",
+              "DESCRIPTION":"PEGASUS INDIRA was bred at our stud farm but, due to an injury as a filly, she was unable to develop her sporting potential and was destined exclusively for breeding purposes. She is descended from the renowned Indoctro and is the maternal sister of MAGNUS ANAIS, a mare that is part of our stud farm and who had a very successful sporting career: 2nd place CSIO 2* Haras El Capricho 1.40 m. 2017, Champion Cat. Primera Torneo del Centro 2016, Champion Cab. Nuevos Torneo del Centro 2013. PEGASUS INDIRA is a great parent who transmits cleanliness and transfer to her offspring. Some of them are P. HELENA IRINA, P. PRETTY WOMAN, P. CAVALIERI and P. CHAMPS ELYSEES."
+          },
+          {
+              "NAME":"PEGASUS IRINA"
+          },
+          {
+              "NAME":"PEGASUS LEPREVOST",
+              "DESCRIPTION": "PEGASUS LEPREVOST was bred by our stud farm and carries in her blood the distinguished influence of LORD Z. This stallion is a descendant of the legendary LORD, and has successfully competed internationally in Grand Prix, achieving victories and outstanding classifications in places such as Cannes, Munich, Kuala Lumpur and Zurich. His sons, such as NICOLETTE and LORD CLASSICS, have continued his legacy in world equestrian sport. On his mother's side, he comes from the notable ATLETHA VDL, a mare that prints assured quality in her descendants. P. LEPREVOST is a sister of outstanding specimens such as P. ATHENEA, P. CRISTIANO, P. AYMAR and P. LEWIS. P. LEPREVOST is currently developing her career under the saddle of Emilia Grimaldi. From the beginning, she has shown promising potential, standing out with a notable 9th place at Criadores II 2019. In 2023 she was crowned Winner of the CSI* 1.40 m. Haras Abril and also of the Mini GP 1.35/40 m. CAEAs a member of our donor dam stable, P. LEPREVOST is a promising parent, with her offspring inheriting her effusiveness and quality in jumping, with offspring such as P. LE BLEU and P. KOURNIKOVA."
+          },
+          {
+              "NAME":"PEGASUS SUMATRA",
+              "DESCRIPTION":"PEGASUS SUMATRA was bred at our stud farm and developed her sporting career under the saddle of Jimena Vidaurre in the First Category 1.40 m, proving to be a very talented competitor. She is a descendant of CHELTON REGOR Z, a son of the Belgian stallion CHELLANO Z out of a CLINTON dam. CHELLANO Z is a descendant of CONTENDER and FAYENCE, a full sister of CORRADO I (winner of Aachen, World Cups and CSI). Some of her children are PEGASUS CARACRUZ, PEGASUS SUMERIO and PEGASUS CONDOR."
+          }
+      ]
+      }
+}

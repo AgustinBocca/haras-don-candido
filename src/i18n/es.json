@@ -1,0 +1,221 @@
+{
+    "Home":{
+        "AUCTION": "Remate",
+        "SEE_MORE": "Ver más",
+        "SEE_LESS": "Ver menos",
+        "SEE_FILE": "Ver ficha",
+        "AUCTION_2023":"Nuestro Remate 2023",
+        "AUCTION_2024":"Nuestro Remate 2024"
+    },
+
+    "REMATES":{
+        "TITLE_1": "Nuestro Remate 2023",
+        "DESCRIPTION_1": "Nuestro remate anual, realizado dentro del marco del prestigioso Torneo del Centro de la República en el Jockey Club Córdoba desde 2007, establece un estándar en la boutique de crianza.",
+        "DESCRIPTION_2":"Cada año, clientes nacionales e internacionales y apasionados de la equitación se unen en nuestro evento en busca de ejemplares de nuestra selección exclusiva, convirtiéndolo en una auténtica fiesta hípica.",
+        "TITLE_2": "Nuestro Remate 2024"
+    },
+
+    "Pillars":{
+        "TITLE": "Pilares",
+        "CARD_PILLARS":[
+            {
+                "INFO_TITLE": "Herencia y trayectoria",
+                "INFO_TEXT_1": "Nuestra historia en el mundo ecuestre se remonta al año 1981 con 'Haras Don Florentino', donde nos destacamos en la cría de Caballos Sangre Pura de Carrera, posicionándonosactualmente entre los mejores haras de esta disciplina en el país.",
+                "INFO_TEXT_2": "Años más tarde, mantenido viva la tradición y la pasión por la cría de caballos de calidad, nos expandimos hacia la cría de caballos de Salto, dando lugar a la introducción de 'Haras Don Cándido'. Esta diversificación no solo enriqueció nuestro legado familiar, sino que también amplió nuestra experiencia y conocimientos en el ámbito de la cría equina, generando sinergias que nos permitieron escalar y sobresalir en diferentes campos dentro de la actividad ecuestre.",
+                "IMG":"/images/Pilares/Herencia.svg"
+            },
+            {
+                "INFO_TITLE": "Excelencia genética",
+                "INFO_TEXT_1": "Nuestro magnífico Pool de Genes es el resultado de décadas de cuidadosa selección y crianza. Desde nuestros inicios apostamos a la genética de elite, importando nuestras primeras yeguas desde Europa.",
+                "INFO_TEXT_2": "Cada caballo que criamos está respaldado por una combinación única de linajes de alto rendimiento, lo que nos permite producir potros con el potencial para destacarse en las mejores pistas dentro y fuera del país.",
+                "IMG":"/images/Pilares/Genetica.svg"
+            },
+            {
+                "INFO_TITLE": "Cuidado y dedicación",
+                "INFO_TEXT_1": "Nuestro compromiso con el cuidado y el bienestar de nuestros caballos es insuperable. Contamos con un equipo de personal capacitado y entrenado que se dedica a garantizar que cada caballo reciba la atención individualizada que necesita para prosperar como atleta.",
+                "IMG":"/images/Pilares/Cuidado.svg"
+            },
+            {
+                "INFO_TITLE": "Tierras y recursos de calidad",
+                "INFO_TEXT_1": "Ubicados en tierras de aptitud agrícola en La Francia, Córdoba, nuestras instalaciones cuentan con excelentes pasturas y una infraestructura de primera calidad.",
+                "INFO_TEXT_2": "Esto nos permite proporcionar a nuestros caballos un entorno óptimo para su desarrollo físico y mental.",
+                "IMG":"/images/Pilares/Tierras.svg"
+            },
+            {
+                "INFO_TITLE": "Resultados probados en competición",
+                "INFO_TEXT_1": "Nuestros productos han demostrado su valía en las pistas de salto más exigentes del país y a nivel internacional. Estamos orgullosos de ver cómo los caballos criados en nuestro haras",
+                "INFO_TEXT_2": "destacan en competiciones de alto nivel, llevando nuestro nombre y reputación a lo más alto.",
+                "IMG":"/images/Pilares/Resultados.svg"
+            },
+            {
+                "INFO_TITLE": "Compromiso con la excelencia continua",
+                "INFO_TEXT_1": "Nos comprometemos a seguir buscando la excelencia en todo lo que hacemos. Ya sea a través de la adopción de nuevas tecnologías de cría, la introducción de nuevas líneas genéticas,",
+                "INFO_TEXT_2":"la capacitación de nuestro personal o el estudio continuo del mundo ecuestre a nivel internacional, estamos constantemente buscando formas de mejorar y superar las expectativas.",
+                "IMG":"/images/Pilares/Compromiso.svg"
+            }
+        ]
+    },
+    
+    "Slogan":{
+        "TITLE_SLOGAN": "VOLANDO MÁS ALTO"
+    },
+
+    "Staff":{
+        "DESCRIPTION_1": "Dueño",
+        "SUB_DESCRIPTION_1": "Director de Cría",
+        "DESCRIPTION_2":"Comercialización",
+        "SUB_DESCRIPCION_2": "Eventos",
+        "DESCRIPTION_3": "Entrenadora",
+        "SUB_DESCRIPTION_3": "Amazona",
+        "DESCRIPTION_4": "Entrenador",
+        "SUB_DESCRIPCION_4": "Jinete",
+        "DESCRIPTION_5": "Veterinario",
+        "DESCRIPTION_6": "Cuidador de caballos" 
+    },
+
+    "Contact":{
+        "TITLE": "Contactanos",
+        "DESCRIPTION_1": "TE",
+        "DESCRIPTION_2":"ASESORAMOS",
+        "NAME": "Nombre",
+        "EMAIL": "Email",
+        "MESSAGE": "Mensaje",
+        "SEND_MESSAGE": "Enviar Mensaje"
+    },
+
+    "Featured Products":{
+        "TITLE": "Productos Destacados",
+        "CARD_PRODUCTS": [
+            {
+                "NAME":"Pegasus Athenea",
+                "AWARDS_1": "Ganadora Gran Premio 2* Gral. San Martín 2019",
+                "AWARDS_2": "3° puesto Gran Premio CSI 2* Haras El Capricho 2019",
+                "AWARDS_3": "Medalla de Plata individual Young Riders FEI South American Championships Chile 2018"
+            },
+            {
+                "NAME":"Pegasus Aymar",
+                "AWARDS_1": "2° puesto Copa Puma Establecimiento La Cautiva 2024",
+                "AWARDS_2": "2° puesto Mini G.P. C.A.E. 2022",
+                "AWARDS_3": "5° puesto Mini G.P. CSI 2* C.A.E. 2022",
+                "AWARDS_4": "2° puesto Cat. Preliminar Polo Jumping Tour 2022",
+                "AWARDS_5": "2° puesto Campeonato Criadores I 2019"
+            },
+            {
+                "NAME":"Pegasus Balotelli",
+                "AWARDS_1": "2° puesto Expo Nuestros Caballos AAFE 2023",
+                "AWARDS_2": "Campeón Salto Suelto en Manga II AAFE 2022"
+            },
+            {
+                "NAME":"Pegasus Chau Amore",
+                "AWARDS_1": "5° G.P. Sol de Mayo CSI 2* 2023",
+                "AWARDS_2": "Medalla de Plata por equipos Juegos ODESUR 2022",
+                "AWARDS_3": "4° puesto individual Juegos ODESUR 2022",
+                "AWARDS_4": "4° puesto Nacional de Primera Categoría 2022",
+                "AWARDS_5": "Ganadora G.P. 1,50 m. C.A.E 2021",
+                "AWARDS_6": "Ganadora G.P. Technopolo 2021"
+            },
+            {
+                "NAME":"Pegasus Chelsea",
+                "AWARDS_1": "Sub-campeona Nacional de Paraguay"
+            },
+            {
+                "NAME":"Pegasus Cristiano",
+                "AWARDS_1": "3° puesto Campeonato Criadores III AAFE 2019"
+            },
+            {
+                "NAME":"Pegasus Lennon",
+                "AWARDS_1": "Campeón del circuito de reserva de equitación 12-14 WEF Wellington, Florida",
+                "AWARDS_2": "Ganador THIS Medal WEF Welling",
+                "AWARDS_3": "Ganador ESTA medalla llega a Chicago, Illinois"
+            },
+            {
+                "NAME":"Pegasus Leprevost",
+                "AWARDS_1": "Ganadora CSI* 1,40 m. Haras Abril 2023",
+                "AWARDS_2": "Ganadora Mini GP 1,35/40m. CAE 2023"
+            },
+            {
+                "NAME":"Pegasus Lewis",
+                "AWARDS_1": "4° puesto Campeonato Juvenil de América del Norte FEI Individual 2023",
+                "AWARDS_2": "Campeón Nacional Segunda Categoría 2022",
+                "AWARDS_3": "3° puesto Criadores III AAFE 2019"
+            },
+            {
+                "NAME":"Pegasus Porvenir",
+                "AWARDS_1": "Ganador Premio Criadores I AAFE 2022"
+            }
+        ]
+    },
+
+    "Broodmares":{
+      "TITLE": "Yeguas Madre",
+        "CARD_BROODMARES":    [
+        {
+            "NAME": "ATHLETA VDL",
+            "DESCRIPTION": "ATHLETA VDL proviene del prestigioso linaje hannoveriano y fue importada por nuestro haras desde Holanda. Es descendiente directa del extraordinario STAKKATO en una madre ESCUDO I y es propia hermana de STAR POWER (padrillo aprobado por la KWPN con hijos aprobados que compiten en las pistas más exigentes de Europa). ATHLETA VDL se destaca como una yegua madre de elite, siendo además un distintivo de calidad reconocido en la cría equina argentina. Además de su notable genética, esta yegua sobresalió en el ámbito deportivo, siendo Ganadora del G. P. Torneo del Centro 2018, 4° puesto CSI 2* 1,40 m. Haras El Capricho 2014 y Sub Campeona Nacional Cat. Preliminar 2013 bajo la monta de Damian Ancic. Quien tiene un hijo de ATHLETA VDL, tiene un campeón asegurado. Sus descendientes no son sólo reconocidos en las pistas más competitivas del país, sino también internacionales: PEGASUS ATHENEA, (Medalla de Plata Young Riders Chile 2018, 3° puesto Gran Premio Haras El Capricho y Ganadora Gran Premio 2* Gral. San Martín 2019), PEGASUS LEWIS (4° puesto Individual FEI North American Youth Championships 2023 y 3° puesto Criadores III 2019), PEGASUS LEPREVOST (Ganadora CSI* 1,40 m. Haras Abril y Ganadora Mini G.P. 1,35/40 m. C.A.E. 2023), PEGASUS AYMAR (2° puesto Copa Puma Est. La Cautiva 2023, 3° puesto Mini G.P. C.A.E. 2022 y 2° puesto Criadores y Serie I 2019), PEGASUS CRISTIANO (3° puesto Copa Criadores y finalista Serie III Caballos Jóvenes AAFE 2019 ), PEGASUS GRAN ATHLETA (precio récord Remate 2020), entre otros grandes ejemplares."
+        },
+        {
+            "NAME": "CELIN R&D Z" ,
+            "DESCRIPTION": "CELIN R&D Z, importada por nuestro haras desde Holanda, es una yegua de notable ascendencia deportiva y genética. Descendiente directa del medallista olímpico CARDENTO, reconocido tanto por sus éxitos en salto como por su influencia como reproductor destacado. Sus líneas maternas incluyen a LA CASSIA R&D (1,35 m.), hermana materna del semental aprobado por KWPN, SIR OLDENBURG.Además, es nieta del destacado semental LANDOR S, conocido por producir saltadores de Gran Premio como LEOVILLE, LOBSTER y L´ARC de TRIOMPHE.CELIN R&D Z es madre de PEGASUS CELINE DU ROUET, una hija de BALOU DU ROUET que es parte del plantel de yeguas madres de nuestro haras.Actualmente, CELIN R&D Z está dando sus primeros pasos en su carrera deportiva bajo la monta de Damian Ancic. Esta yegua representa lo mejor en términos de excelencia atlética y potencial genético."
+        },
+        {
+            "NAME":"DALINDE VDL",
+            "DESCRIPTION": "DALINDE VDL, importada desde Holanda, es una distinguida yegua hija del legendario CARDENTO, reconocido tanto por sus logros de alto nivel como por su destacada influencia como semental. CARDENTO, medallista olímpico de plata por equipos en Atenas y ganador de múltiples competencias internacionales, ha dejado un legado significativo con descendientes como CARRERA VDL, CORPORAL VDL, BARDOLINO, MATRIX y NICE STEPHANIE, todos destacados a nivel mundial.Por línea materna, DALINDE VDL desciende de GOODTIMES, conocido por producir grandes campeones y descendiente del renombrado NIMMERDOR. DALINDE VDL compitió bajo la monta de Damian Ancic con buenos resultados en pruebas de 1,30 m. antes de retirarse por motivo de lesión. Como madre de nuestro haras, ha demostrado ser excepcional, con hijos como la reconocida P. CHAU AMORE: 5° puesto GP Sol de Mayo CSI 2* 2023, Medalla de Plata por equipos y 4°puesto individual Juegos ODESUR 2022, 4° puesto Nacional de Primera 2022, calificativa Tokio 2021, Ganadora G.P. 1,50 m. C.A.E 2021 y Ganadora G.P. Technopolo 2021. Otros hijos notables son P. AMORE MIO, P. CANDY CRUSH, P. LEBRON y P. LENNON (4° puesto 1,35 m. para Caballos de 7 años W.E.F. Ocala 2023).DALINDE VDL representa un valioso activo tanto para nuestro haras como para la cría equina de salto, ya que ha demostrado que la calidad de su progenie es una influencia excepcional para el mundo ecuestre."
+        },
+        {
+            "NAME":"DINA VDL",
+            "DESCRIPTION": "DINA VDL, importada desde Holanda por nuestro haras, posee un pedigree excepcional que combina las destacadas líneas de INDOCTRO y CONTENDER.Desarrolló su carrera bajo la monta de Bárbara Dutruel y, desde sus inicios, demostró en las pistas mucha actitud y potencial. Así fue que en el 2013 se consagró en Rosario como Campeona de Caballos Nuevos 1,20 m. y posteriormente Campeona Nacional de Amazonas. En el 2014, fue Sub-campeona del Torneo Aniversario del Jockey Club Córdoba y al año siguiente se coronó Campeona Provincial de Córdoba en Primera Categoría. En el 2016, los triunfos siguieron y DINA VDL fue Ganadora del G.P. Regional de Rosario y Campeona en Primera Categoría, Campeona del Campeonato Valla Uno y Sub-campeona Provincial de Córdoba. Finalmente, en el 2017 se consagró Campeona de Primera Categoría del Torneo Aniversario del Jockey Club Córdoba. Indudablemente, DINA VDL es una de las madres de élite de nuestro haras, transmitiendo a sus hijos su delicadeza, competitividad y gran corazón para competir en las pistas.Entre su notable descendencia se encuentran PEGASUS DILLINGER, destacado como Campeón en Nuestros Caballos 2014 y Ganador del FEI Challenge Rosario 1,20 m. 2018, así como Campeón de Segunda Categoría 1,20 m. en el Torneo del Centro de la República 2019 y Ganador Selectiva FEI AMERICAS CHAMPIONSHIP 2021 Junior 1,40 m. con su propietaria Delfina Spinella. Otros hijos destacados son P. SINSAJO, P. VODOO y P. UNITED, quienes continúan el legado de excelencia de su madre en las pistas.DINA VDL no solo ha dejado su marca en las pistas, sino que también ha establecido un estándar de calidad en la cría de caballos de salto."
+        },
+        {
+            "NAME":"GAMA ILIANA",
+            "DESCRIPTION":"GAMA ILIANA, una destacada descendiente de IROKO, es una madre de élite en nuestro haras.Esta yegua fue adquirida en 2015 por nuestro haras, habiendo desarrollado hasta ese momento una destacada carrera deportiva bajo la monta de Luis Gustavo Vinhaes Ferreira. Junto a este jinete, participó en las pruebas de mayor exigencia del país, tanto a nivel nacional como internacional, obteniendo logros como el 5° puesto en el CSI 2* World Cup 1,60 m. en Haras El Capricho en 2014 y muchas clasificaciones en grandes premios. Posteriormente, continuó su carrera bajo la monta de Emilia Grimaldi compitiendo en las categorías Junior, Young Riders y Primera. En el 2015 fue Sub-campeona Provincial de Córdoba y Sub-campeona Nacional Junior, y en el 2017 logró el 3° puesto en el Gran Premio F.E.A. en el Club Hípico Argentino.GAMA ILIANA transmite a sus crías su fuerza y actitud para el salto. Algunas de ellas son PEGASUS CLEAR SUN y PEGASUS IVANNA (Uruguay)."
+        },
+        {
+            "NAME":"GRAMA ASCOCHINGA",
+            "DESCRIPTION": "GRAMA ASCOCHINGA es una destacada performer criada en Argentina. Esta yegua tuvo una gran carrera deportiva, compitiendo en pruebas hasta 1,50 m. y hoy es una gran reproductora en nuestro plantel de madres."
+        },
+        {
+            "NAME":"HINULA 2-N"
+        },
+        {
+            "NAME":"KENTUCKEY SR Z",
+            "DESCRIPTION":"KENTUCKEY SR Z, es una yegua importada de Holanda que lleva consigo un pedigree impresionante. Es hija del renombrado semental KANNAN, que ocupó el primer lugar en el Ranking Mundial WBFSH de Sementales de Salto en 2014 y ha permanecido consistentemente entre los 20 Mejores Padres de Ganadores durante la última década. KANNAN es padre de NINO DES BUISSONNETS, ganador de la Medalla de Oro individual en los JJ.OO. de Londres 2012, y, con más de 600 productos ganadores en competencias de CSI, este semental ha dejado una huella notable en el deporte ecuestre.En la línea materna de KENTUCKEY SR Z encontramos a QUICK STAR, padre del legendario BIG STAR, medallista de oro olímpico tanto por equipos como individualmente. Por lo tanto, con NINO DES BUISSONNETS y BIG STAR, esta yegua tiene dos medallistas olímpicos en su genealogía.KENTUCKEY SR Z se ha destacado como una productora de hijos excepcionales. Algunos de ellos son a P. CLICHÉ, P. KENIA, P. BALOTELLI (precio récord remate y Campeón Salto Suelto I AAFE 2022), P. CAMERON y P. LOBO."
+        },
+        {
+            "NAME":"MAGNUS ANAIS",
+            "DESCRIPTION": "MAGNUS ANAIS, hija del destacado ALNOK Z, ha tenido una muy buena carrera deportiva bajo la monta de Damián Ancic y Martin Dopazo, logrando notables resultados como el 2o puesto en el CSIO 2* 1,40 M. Haras El Capricho en 2017, Campeona en la Categoría Primera del Torneo del Centro en 2016, Campeona Categoría Caballos Nuevos 2013, y múltiples clasificaciones en pruebas de 1,40 m. y Mini Grandes Premios. Como destacada yegua reproductora en nuestro haras, MAGNUS ANAIS transmite a sus hijos una notable limpieza y técnica en el salto. Entre su descendencia se destacan P. CON ANAIS, P. STALIN y P. LOBA."
+        },
+        {
+            "NAME":"MAGNUS ANTIGONA",
+            "DESCRIPTION": "MAGNUS ANTIGONA, hija del renombrado Alnok Z, es una yegua de excepcional destreza que, bajo la monta de Damián Ancic y luego de Emilia Grimaldi, se destacó al ganar el Campeonato de Categoría Intermedia en Haras El Capricho en 2014 y brillar en Mini Grandes Premios. Como destacada progenitora en nuestro haras, Magnus Antigona transmite a sus hijos su firmeza y gran corazón en el salto. Entre su descendencia se encuentran ejemplares como P. NEYMAR, P. CRISTOBAL, P. UNLIMITED, P. STRIKE FORCE, P. LÍDER, P. INTRUSO (Colombia), P. ARTEMISA y P. PERLA NEGRA."
+        },
+        {
+            "NAME":"MAGNUS VASALISA"
+        },
+        {
+            "NAME":"PEGASUS ATHENA",
+            "DESCRIPTION":"PEGASUS ATHENEA es una estrella en nuestro plantel de yeguas madres, criada por nuestro haras y una descendiente directa del prestigioso INDORADO, dos veces ganador de las clasificatorias para el Bundeschampionat y clasificado top 10 en el mismo, además de un gran performer internacional bajo la monta de Jur Vrieling.PEGASUS ATHENEA lleva también el sello de calidad de ATHLETA VDL, su madre, quien es un orgullo para nuestro haras debido a su destacada capacidad transmisora y la calidad excepcional de sus descendientes.En su propia carrera deportiva, P. ATHENEA ha brillado desde sus inicios coronándose en el 2014 como Sub-campeona Nacional de Caballos Jóvenes bajo la conducción de Damian Ancic. En el 2017, obtuvo el Sub-campeonato de Primera Categoría del Torneo Cordillerano y, posteriormente, consiguió la Medalla de Plata individual en la Categoría Young Riders del FEI Southamerican Championships Chile 2018, bajo la monta de Emilia Grimaldi. En el 2019, fue la Ganadora del Gran Premio Gral. San Martín 2* C.A.E. y obtuvo un notable 3° puesto en la FEI World Cup 1,60 m. en Haras El Capricho, con la conducción de Martin Dopazo.P. ATHENEA es actualmente madre de numerosos productos destacados que continúan con su legado en el deporte ecuestre. Entre sus descendientes se encuentran nombres como P. POMMERY, P. CHELSEA (Subcampeona Nacional de Paraguay 2020), P. WHITAKER (4° puesto en el Longines Global Tour México 2022 1,35 m. y 8° puesto en la Final CSI 7 años 1,30/35 m. en La Silla 2022), P. CHAMPEIN (Campeona Nacional de Caballos Jóvenes I en 2020) y P. PORVENIR (Ganador Premio Criadores I AAFE 2022)."
+        },
+        {
+            "NAME":"PEGASUS CELINE DU ROUET"
+        },
+        {
+            "NAME":"PEGASUS EVITA"
+        },
+        {
+            "NAME":"PEGASUS INDIRA",
+            "DESCRIPTION":"PEGASUS INDIRA fue criada en nuestro haras y, debido a una lesión de potranca, no pudo desarrollarse deportivamente y fue destinada exclusivamente a fines reproductivos. Desciende del reconocido Indoctro y es hermana materna de MAGNUS ANAIS, yegua que componen el plantel de madres de nuestro haras y que contó con una carrera deportiva muy exitosa: 2º puesto CSIO 2* Haras El Capricho 1,40 m. 2017, Campeona Cat. Primera Torneo del Centro 2016, Campeona Cab. Nuevos Torneo del Centro 2013. PEGASUS INDIRA es una gran progenitora que transmite a sus hijos limpieza y traslado. Algunos de ellos son P. HELENA IRINA, P. PRETTY WOMAN, P. CAVALIERI y P. CHAMPS ELYSEES."
+        },
+        {
+            "NAME":"PEGASUS IRINA"
+        },
+        {
+            "NAME":"PEGASUS LEPREVOST",
+            "DESCRIPTION": "PEGASUS LEPREVOST, fue criada por nuestro haras y lleva en su sangre la distinguida influencia de LORD Z. Este padrillo es un descendiente del legendario LORD, y ha competido con éxito a nivel internacional en Grandes Premios, logrando victorias y destacadas clasificaciones en lugares como Cannes, Múnich, Kuala Lumpur y Zúrich. Sus hijos, como NICOLETTE y LORD CLASSICS, han continuado su legado en el deporte ecuestre mundial.Por parte materna, proviene de la notable ATLETHA VDL, yegua que imprime calidad asegurada en sus descendientes. P. LEPREVOST es hermana de destacados ejemplares como P. ATHENEA, P. CRISTIANO, P. AYMAR y P. LEWIS.P. LEPREVOST actualmente desarrolla su carrera bajo la monta de Emilia Grimaldi. Desde sus inicios, mostró un potencial prometedor, destacándose con un notable 9° puesto en Criadores II 2019. En el 2023 se consagró como Ganadora del CSI* 1,40 m. Haras Abril y también del Mini G.P. 1,35/40 m. C.A.E.Como integrante de nuestro plantel de madres donantes, P. LEPREVOST es una progenitora prometedora, siendo que su descendencia hereda su efusividad y calidad en el salto, con crías como P. LE BLEU y P. KOURNIKOVA."
+        },
+        {
+            "NAME":"PEGASUS SUMATRA",
+            "DESCRIPTION":"PEGASUS SUMATRA fue criada en nuestro haras y desarrolló su carrera deportiva bajo la monta de Jimena Vidaurre en Primera Categoría 1,40 m. demostrando ser una competidora muy talentosa.Es descendiente de CHELTON REGOR Z, un hijo del semental belga CHELLANO Z en una madre CLINTON. CHELLANO Z, desciende de CONTENDER y de FAYENCE, propia hermana de CORRADO I (ganador de Aachen, World Cups y CSI).Algunos de sus hijos son PEGASUS CARACRUZ, PEGASUS SUMERIO y PEGASUS CONDOR."
+        }
+    ]
+    }
+}

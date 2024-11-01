@@ -14,10 +14,7 @@ const flagIcons: Record<'es' | 'en', ImageMetadata> = {
 ---
 
 <div class="relative inline-block text-white text-sm pt-2">
-    <!-- Checkbox para controlar el menú -->
     <input type="checkbox" id="dropdown-toggle" class="hidden peer" />
-
-    <!-- Botón principal -->
     <label 
         for="dropdown-toggle"
         class="flex items-center cursor-pointer px-3 py-2 rounded-lg focus:outline-none">
@@ -28,13 +25,15 @@ const flagIcons: Record<'es' | 'en', ImageMetadata> = {
         </svg>
     </label>
 
-    <!-- Menú desplegable -->
     <ul class="absolute right-0 mt-2 w-32 bg-[#ab994b] text-white rounded-lg hidden peer-checked:block">
         {Object.entries(languages).map(([langPrefix]) => {
             if (langPrefix === lang) return null; 
             return (
                 <li>
-                    <a href={translatePath('/', langPrefix)} class="flex items-center px-4 py-2 hover:bg-[#ab994b] space-x-2">
+                    <a 
+                        href={translatePath(Astro.url.pathname, langPrefix)} 
+                        class="flex items-center px-4 py-2 hover:bg-[#ab994b] space-x-2"
+                    >
                         <img src={flagIcons[langPrefix as 'es' | 'en'].src} alt={`${langPrefix} flag`} class="w-5 h-5" />
                         <span>{langPrefix.toUpperCase()}</span>
                     </a>
